@@ -33,7 +33,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 .row1, .row1 a{color:#C0BAB6; background-color:#333333;}
 .row2{color:#979797; background-color:#FFFFFF;}
-.row2 a{color:#FF9900; background-color:#FFFFFF;}
+.row2 a{color:#ee00ff; background-color:#FFFFFF;}
 .row3, .row3 a{color:#919191; background-color:#232323;}
 
 /*----------------------------------------------Generalise-------------------------------------*/
@@ -78,14 +78,14 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 
 #header form{display:block; width:290px; float:right; margin:20px 0; padding:0;}
 #header form input{display:block; float:left; width:200px; margin:0; padding:5px; color:#C0BAB6; background-color:#232323; border:1px solid #666666;}
-#header form #sf_submit{display:block; float:right; width:70px; font-size:12px; font-weight:bold; text-transform:uppercase; color:#FFFFFF; background-color:#FF9900; border:none; cursor:pointer;}
+#header form #sf_submit{display:block; float:right; width:70px; font-size:12px; font-weight:bold; text-transform:uppercase; color:#FFFFFF; background-color:#ee00ff; border:none; cursor:pointer;}
 
 #header nav{display:block; width:100%; margin:0; padding:20px 0; color:#C0BAB6; background-color:#232323; clear:both;}
 #header nav ul{padding:0 20px;}
 #header nav li{display:inline; margin-right:25px; text-transform:uppercase;}
 #header nav li.last{margin-right:0;}
-#header nav li a{color:#C0BAB6; background-color:#232323;}
-#header nav li a:hover{color:#FF9900; background-color:#232323;}
+#header nav li a{width:100%; height:100%; color:#C0BAB6; background-color:#232323;}
+#header nav li a:hover{color:#ee00ff; background-color:#232323;}
 
 /*----------------------------------------------Content Area-------------------------------------*/
 
@@ -100,7 +100,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #container #slider figure{}
 #container #slider figure img{float:right; width:630px; height:300px;}
 #container #slider figure figcaption{display:block; float:left; width:290px; height:260px; padding:20px; overflow:hidden; color:#989898; background-color:#464646; line-height:1.6em;}
-#container #slider figure figcaption a{color:#FF9900; background-color:#464646;}
+#container #slider figure figcaption a{color:#ee00ff; background-color:#464646;}
 #container #slider figure h2{font-size:42px; font-weight:normal; font-style:italic; text-transform:none;}
 #container #slider figure footer{}
 #container #slider article iframe{width:100%; max-width:100%;}
