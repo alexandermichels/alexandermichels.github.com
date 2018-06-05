@@ -1,6 +1,6 @@
 html{overflow-y:scroll;}
 
-body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#919191; background-color:#232323;}
+body{margin:0; padding:0; font-size:15px; font-family:Georgia, "Times New Roman", Times, serif; color:#3a3535; background-color:#232323;}
 
 .clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
 .clear{display:block; clear:both;}
@@ -103,6 +103,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #container #slider figure figcaption a{color:#FF9900; background-color:#464646;}
 #container #slider figure h2{font-size:42px; font-weight:normal; font-style:italic; text-transform:none;}
 #container #slider figure footer{}
+#container #slider article iframe{width:100%; max-width:100%;}
 
 /* ------Main Content-----*/
 
@@ -132,6 +133,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 
 #container #homepage section nav li{margin:0 0 8px 0; padding:0 0 5px 0; border-bottom:1px solid #D6D6D6;}
 #container #homepage section nav li.last{margin:0;}
+#container #homepage section article{font-size:13px;}
 #container #homepage section nav a{padding:0 0 0 10px; background:url("../images/arrow.gif") left center no-repeat;}
 
 /*----------------------------------------------Footer-------------------------------------*/
