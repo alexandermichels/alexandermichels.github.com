@@ -138,5 +138,5 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 
 /*----------------------------------------------Footer-------------------------------------*/
 
-#footer{padding:20px 0;}
+#footer{width:100%; padding:20px 0;}
 #footer p{margin:0; padding:0;}
