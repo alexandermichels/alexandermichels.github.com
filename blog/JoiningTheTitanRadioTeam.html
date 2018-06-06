@@ -6,24 +6,15 @@
 <link rel="stylesheet" href="../styles/layout.css" type="text/css">
 <link rel="shortcut icon" type="image/x-icon" href="../HTM.ico" />
 <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+<script type="text/javascript" src="js/lib/jquery-1.11.1.min.js" ></script>
+   <script>
+     $(function(){ $("myHeader").load("header.html") });
+     $(function(){ $("myFooter").load("footer.html") });
+   </script>
 </head>
 <body>
 <div class="wrapper row1">
-  <header id="header" class="clear">
-    <div id="hgroup">
-      <h1><a href="../index.html">Alexander Michels</a></h1>
-      <h2>Mathematician and Software Engineer</h2>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="../about_me.html">About Me</a></li>
-        <li><a href="../blog.html">Blog</a></li>
-        <li><a href="https://github.com/alexandermichels/CV/blob/master/CurriculumVitae.pdf">Curriculum Vitae</a></li>
-        <li><a href="https://github.com/alexandermichels">GitHub</a></li>
-        <li class="last"><a href="https://www.linkedin.com/in/alexander-michels-6b4934bb/">LinkedIn</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="myHeader"></div>
 </div>
 <!-- content -->
 <div class="wrapper row2">
@@ -57,48 +48,6 @@
     <!-- ########################################################################################## -->
     <!-- ########################################################################################## -->
     <!-- ########################################################################################## -->
-    <div id="homepage" class="last clear">
-      <section class="one_quarter">
-        <h2 class="title">From The Blog</h2>
-        <article>
-          <header>
-            <h2>What Is Hierarchical Temporal Memory?</h2>
-            <address>
-            <a href="../index.html">Alexander Michels</a>, AlexanderMichels.GitHub.io
-            </address>
-            <time datetime="2018-06-05">Sunday, June 5<sup>th</sup> 2018</time>
-          </header>
-          <p>Hierarchical Temporal Memory is kind of biologically inspired artificial intelligence </p>
-          <footer class="more"><a href="../blog.html">Read More &raquo;</a></footer>
-        </article>
-      </section>
-      <section class="one_quarter">
-        <h2 class="title">Quick Links</h2>
-        <nav>
-          <ul>
-            <!-- add my quick links -->
-            <li><a href="../about_me.html">About Me</a></li>
-            <li><a href="../blog.html">Blog</a></li>
-            <li><a href="https://github.com/alexandermichels/CV/blob/master/CurriculumVitae.pdf">Curriculum Vitae</a></li>
-            <li><a href="https://github.com/alexandermichels">GitHub</a></li>
-            <li class="last"><a href="https://www.linkedin.com/in/alexander-michels-6b4934bb/">LinkedIn</a></li>
-          </ul>
-        </nav>
-      </section>
-      <section class="two_quarter lastbox">
-        <h2 class="title">About Me</h2>
-        <a href="../about_me.html"><img class="imgl" src="../images/ProfilePic.jpg" width="130" height="130" alt=""></a>
-        <p>Mathematician and software engineer whose primary interests lie in Algebra, Logic, Machine Intelligence, Mathematical Economics, and Topology.</p>
-        <footer class="more"><a href="../about_me.html">Read More &raquo;</a></footer>
-      </section>
-    </div>
-    <!-- / content body -->
-  </div>
-</div>
-<!-- Footer -->
-<div class="wrapper row3">
-  <footer id="footer" class="clear">
-  </footer>
-</div>
+    <div id="myFooter"></div>
 </body>
 </html>
