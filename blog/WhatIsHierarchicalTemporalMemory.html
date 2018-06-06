@@ -11,6 +11,7 @@
 $(document).ready(function(){
     $(function(){ $("#myHeader").load("header.html") });
     $(function(){ $("#myFooter").load("footer.html") });
+    $(function(){ $("#myPost").load("../posts/WhatIsHierarchicalTemporalMemory.html") });
 });
 </script>
 </head>
@@ -22,28 +23,7 @@ $(document).ready(function(){
 <div class="wrapper row2">
   <div id="container" class="clear">
     <section id="slider" class="clear">
-      <article>
-        <!-- Blog Posts -->
-        <article>
-          <header>
-            <a href="WhatIsHierarchicalTemporalMemory.html"><h2>What is Hierarchical Temporal Memory?</h2></a>
-            <address>
-            <a href="../index.html">Alexander Michels</a>, AlexanderMichels.GitHub.io
-            </address>
-            <time datetime="2018-06-05">Tuesday, June 5<sup>th</sup> 2018</time>
-          </header>
-          <font size="3">
-          <p>Hierarchical Temporal Memory is kind of biologically inspired artificial intelligence pioneered by Jeff Hawkins and currently being developed by <a href="https://numenta.com/">Numenta</a>. It is also the basis of my <a href="github.com/alexandermichels/HonorsResearch">Honors Research</a> so I wanted to make a quick post explaining the basics of this incredible technology. Hierarchical Temporal Memory (HTM) is a breakthrough technology that uses analogy while predicting and finding anomalies.</p>
-          <p>HTM is able to use analogy because it encodes the input space to binary codes attempting to preserve local distance information. Informally, two elements of the input space (say A and B) which are semantically similar, or close under the metric on our input space, should have codes which are close using <a href="https://en.wikipedia.org/wiki/Hamming_distance">Hamming distance</a>. This enables us to say that two codes with a low Hamming distance are similar elements in the input space. This mapping preserving relative similarity between elements of the input space is generally not injective, for example in the case of the reals such a mapping would be impossible. The system at each layer works with a quotient space on the topology of n-length codewords which is made feasible by encoding semantic meaning. If one layer predicts more than one event (we will discuss prediction in a minute), the codewords for the two events {A,B} are combined into a single codeword using bitwise-OR. Thus {[000111],[111000]} would be [111111] to the system.</p>
-          <center><img src="../images/HTMCell.jpg" /></center>
-          <p>How would such a prediction come about? Hierachical Temporal Memory is a model for the human neocortex and as such uses artificial "cells" and "synapses." As the HTM experiences transitions from data at one time step to the next, it forms synapses to memorize the transitions. Then the system uses these formed synapses to output what it believes the next state will look like. This is done through a complex process called the "Temporal Pooler" which uses the activity level of the segments of each cell to determine each cell's predictive state. </p>
-          <center><img src="../images/Poolers.jpg" /></center>
-          <p>HTMs have a couple elegant solutions to common problems built in one of which being contextual information. Some information will mean vastly different things under different contexts, to give an example suppose we are attempting to do natural language processing from an audio file. How do we distinguish from "ate" and "eight"? The codewords for the sounds "ate"/"eight" will be the same, but HTM cells are held in columns allowing them to represent the same codewords in different contexts. So it will know when it hears "I have eight" that we are in fact talking about "eight" and not "ate."</p>
-          <p>Another interesting capability of Hierarchical Temporal Memory is the ability to predict more than one event if all of the predicted events have a likelihood about the threshold (which is a parameter of the system). Suppose I have been feeding the system "0" followed by "1" or "2" with equal probability. Hierarchical Temporal Memory is able to easily deal with this by simply outputting the codewords for "1" and "2" combined using bitwise-OR (as we discussed earlier). The binary codes it uses are called Sparse Distributed Representations because they have a low number of on-bits relative to their length, so there are few collisions unlike in our previous example.</p>
-          <p>By combining anology through metric-spaces, contextual information, and multiple predictions, Hierarchical Temporal Memory is excellent at anomoly detection and <a href="https://numenta.com/applications/htm-studio/">Numenta has developed some really cool applications for anomoly detection based on HTMs</a>. This has been a very quick and high level explaination of Hierarchical Temporal Memory, for more information feel free to check out <a href="https://github.com/alexandermichels/HonorsResearch">my work with HTMs</a>, and <a href="https://github.com/alexandermichels/HonorsResearch/blob/master/Honors_Research_Proposal.pdf">my proposal</a> has a good overview of the technology.</p>
-        </font>
-        </article>
-      </article>
+      <div id="myPost"></div>
     </section>
     <!-- main content -->
     <div id="intro">
