@@ -164,15 +164,6 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 #container #slider h2{font-size:150%; font-weight:bold;}
 
 /* ------Blogposts-----*/
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #container #homepage section{margin-bottom: .1em;}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  #container #homepage section{margin-bottom: .1em;}
-}
 
 #container #homepage section article header h2{font-size:110%; font-weight:bold;}
 #container #homepage section article address, #container #homepage section article time{font-size:90%; font-style:normal;}
@@ -193,6 +184,11 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #container #homepage section{border-bottom:.1em solid #D6D6D6;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #container #homepage section{border-bottom:0}
 }
 /*----------------------------------------------Footer-------------------------------------*/
 
