@@ -1,0 +1,143 @@
+html{overflow-y:scroll;}
+
+* {
+    box-sizing: border-box;
+}
+
+body{margin:0; padding:0; font-size:1.25em; font-family:Georgia, "Times New Roman", Times, serif; color:#3a3535; background-color:#232323;}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear{display:block; clear:both;}
+html[xmlns] .clear{display:block;}
+* html .clear{height:1%;}
+
+a{outline:none; text-decoration:none;}
+
+code{font-weight:normal; font-style:normal; font-family:Georgia, "Times New Roman", Times, serif;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.imgholder, .imgl, .imgr{padding:.33em; border:.1em solid #D6D6D6; text-align:center;}
+.imgl{float:left; margin:0 1.25em 1.25em 0; clear:left;}
+.imgr{float:right; margin:0 0 1.25em 1.25em; clear:right;}
+
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+hr {width:3px; padding: .2em 0 .2em 0;}
+address, article, aside, figcaption, figure, footer, header, nav, section{margin:0; padding:0;}
+
+q{display:block; padding:0 .83em .66em .83em; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
+q:before{content:'� '; font-size:2.1em;}
+q:after{content:' �'; font-size:2.1em; line-height:0;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
+
+.row1, .row1 a{color:#C0BAB6; background-color:#333333;}
+.row2{color:#979797; background-color:#FFFFFF;}
+.row2 a{color:#ee00ff; background-color:#FFFFFF;}
+.row3{color:#979797; background-color:#FFFFFF;}
+.row3 a{color:#ee00ff; background-color:#FFFFFF;}
+.row4, .row4 a{color:#919191; background-color:#232323;}
+
+/*----------------------------------------------Generalise-------------------------------------*/
+
+#header, #container, #footer{display:block; width:100%; margin:0 auto;}
+
+nav ul{margin:0; padding:0; list-style:none;}
+
+h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:1.9em; font-weight:normal; font-style:italic; line-height:normal;}
+
+address{font-style:normal;}
+
+blockquote, q{display:block; padding:.66em .83em; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
+blockquote:before, q:before{content:'� '; font-size:200%;}
+blockquote:after, q:after{content:' �'; font-size:200%; line-height:0;}
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Times,serif;}
+.blogpost {border-bottom: 1px solid #D6D6D6;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+}
+
+.lastbox{margin-right:0;}
+
+/*----------------------------------------------Header-------------------------------------*/
+
+#header{padding:1.65em 0;}
+
+#header #hgroup{float:left; margin:0 0 1.65em 0;}
+#header #hgroup h1, #header #hgroup h2{font-weight:normal; font-style:normal; text-transform:none;}
+#header #hgroup h1{font-size:3em;}
+#header #hgroup h2{font-size:100%;}
+
+#header nav{display:block; width:100%; margin:0; padding:1.65em 0; color:#C0BAB6; background-color:#232323; clear:both;}
+#header nav ul{padding:0 1.65em;}
+#header nav li{display:inline; margin-right:2em; text-transform:uppercase;}
+#header nav li.last{margin-right:0;}
+#header nav li a{width:100%; height:100%; color:#C0BAB6; background-color:#232323;}
+#header nav li a:hover{color:#ee00ff; background-color:#232323;}
+
+/*----------------------------------------------Content Area-------------------------------------*/
+#about_me{padding:2.5em 0 1em 0;}
+#container section{margin-bottom:2.5em; padding:0;}
+#container .last{margin:0;}
+#container .more{text-align:right;}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #container{padding:2.5em 5% 1em 5%;}
+  [class*="col-"] {width: 100%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #container{padding:2.5em 16.5% 1em 16.5%;}
+}
+
+/* ------Main Content-----*/
+#container #intro{border-bottom:1px solid #D6D6D6;}
+#container article {display: block;}
+#container article figure ul{margin:0; padding:0; list-style:none;}
+#container article figure ul li{float:left; margin:0 .5em 0 .5em;}
+#container article figure ul li.last{margin:0;}
+#container article figure ul li img{width:8em; height:8em; margin:0; padding:.2em; border:.1em solid #D6D6D6;}
+
+#container #homepage{display:block; width:100%; line-height:1.6em;}
+#container #homepage section{margin-bottom:0;}
+#container #homepage section h2.title{margin:0 0 2em 0; padding:0 0 .66em 0; font-size:1.33em; font-weight:bold; text-transform:uppercase;}
+#container #homepage section footer{clear:both;}
+
+/* ------Blogposts-----*/
+
+#container #homepage section article header h2{font-size:100%; font-weight:bold;}
+#container #homepage section article address, #container #homepage section article time{font-size:.83em; font-style:normal;}
+#container #homepage section article footer{text-align:left;}
+
+/* ------Quick Links-----*/
+
+#container #homepage section nav li{margin:0 0 .66em 0; padding:0 0 .4em 0; border-bottom:.1em solid #D6D6D6;}
+#container #homepage section nav li.last{margin:0;}
+#container #homepage section article{font-size:100%;}
+#container #homepage section nav a{padding:0 0 0 .83em; background:url("../images/arrow.gif") left center no-repeat;}
+
+/*----------------------------------------------Footer-------------------------------------*/
+
+#footer{padding:1.65em 0;}
+#footer p{margin:0; padding:0;}
