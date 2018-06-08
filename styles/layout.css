@@ -96,6 +96,7 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #header{padding:1.65em 16.5% 1em 16.5%;}
+  #header #hgroup h1, #header #hgroup h2{text-align:left;}
 }
 
 #header #hgroup{float:left; margin:0 0 1.65em 0;}
