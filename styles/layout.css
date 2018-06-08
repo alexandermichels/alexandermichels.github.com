@@ -59,7 +59,7 @@ blockquote:after, q:after{content:' �'; font-size:100%; line-height:0;}
 form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
 input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Times,serif;}
-.blogpost {border-bottom: 1px solid #D6D6D6;}
+.blogpost {border-bottom: 1px solid #D6D6D6; margin-bottom: .1em;}
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -136,6 +136,10 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 #container #slider h2{font-size:150%; font-weight:bold;}
 
 /* ------Blogposts-----*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #container #homepage section{margin-bottom: .1em;}
+}
 
 #container #homepage section article header h2{font-size:110%; font-weight:bold;}
 #container #homepage section article address, #container #homepage section article time{font-size:90%; font-style:normal;}
