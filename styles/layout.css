@@ -126,14 +126,15 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 /* ------Blogposts-----*/
 
 #container #homepage section article header h2{font-size:90%; font-weight:bold;}
-#container #homepage section article address, #container #homepage section article time{font-size:80%; font-style:normal;}
+#container #homepage section article address, #container #homepage section article time{font-size:60%; font-style:normal;}
+#container #homepage section article p{font-size:80%;}
 #container #homepage section article footer{text-align:left;}
 
 /* ------Quick Links-----*/
 
 #container #homepage section nav li{margin:0 0 .3em 0; padding:0 0 .2em 0; border-bottom:.1em solid #D6D6D6;}
 #container #homepage section nav li.last{margin:0;}
-#container #homepage section article{font-size:100%;}
+#container #homepage section article{font-size:80%;}
 #container #homepage section nav a{padding:0 0 0 .5em; background:url("../images/arrow.gif") left center no-repeat;}
 
 /*----------------------------------------------Footer-------------------------------------*/
