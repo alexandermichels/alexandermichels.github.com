@@ -2,6 +2,7 @@ html{overflow-y:scroll;}
 
 * {
     box-sizing: border-box;
+    max-width:100%; 
 }
 
 body{margin:0; padding:0; font-size:100%; font-family:Georgia, "Times New Roman", Times, serif; color:#3a3535; background-color:#232323;}
@@ -18,7 +19,7 @@ code{font-weight:normal; font-style:normal; font-family:Georgia, "Times New Roma
 .fl_left{float:left;}
 .fl_right{float:right;}
 
-img{margin:0; padding:0; border:none; max-width:100%; line-height:normal; vertical-align:middle;}
+img{margin:0; padding:0; border:none;line-height:normal; vertical-align:middle;}
 .imgholder, .imgl, .imgr{padding:.33em; border:.1em solid #D6D6D6; text-align:center;}
 .imgl{float:left; margin:0 1.25em 1.25em 0; clear:left;}
 .imgr{float:right; margin:0 0 1.25em 1.25em; clear:right;}
