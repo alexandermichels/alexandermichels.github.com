@@ -90,7 +90,7 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #header{padding:1.65em 5% 1em 5%;}
-  #header #hgroup h1, #header #hgroup h2{text-align:center;}
+  #header #hgroup h1, #header #hgroup h2{text-align:right;}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
