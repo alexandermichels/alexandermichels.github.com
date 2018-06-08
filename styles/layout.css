@@ -145,6 +145,7 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 #container #homepage section article address, #container #homepage section article time{font-size:90%; font-style:normal;}
 #container #homepage section article p{font-size:100%;}
 #container #homepage section article footer{text-align:left;}
+#container #homepage section article footer a{text-align:right; border-bottom:.1em solid #D6D6D6; }
 
 /* ------Quick Links-----*/
 
