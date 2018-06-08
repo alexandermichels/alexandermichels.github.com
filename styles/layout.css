@@ -90,7 +90,7 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #header{padding:1.65em 5% 1em 5%;}
-  #header #hgroup h1, #header #hgroup h2{text-align:right;}
+  #header #hgroup h1, #header #hgroup h2{text-align:left;}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -180,16 +180,19 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #container #homepage section{border-bottom:.1em solid #D6D6D6;}
+  #container #homepage section nav{width:100%;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #container #homepage section{border-bottom:.1em solid #D6D6D6;}
+  #container #homepage section nav{width:100%;}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #container #homepage section{border-bottom:0px}
+  #container #homepage section nav{width:95%;}
 }
 /*----------------------------------------------Footer-------------------------------------*/
 
