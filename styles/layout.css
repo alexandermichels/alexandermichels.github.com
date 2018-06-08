@@ -145,7 +145,6 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 #container #homepage section article address, #container #homepage section article time{font-size:90%; font-style:normal;}
 #container #homepage section article p{font-size:100%;}
 #container #homepage section article footer{text-align:left;}
-#container #homepage section article footer a{text-align:right; border-bottom:.1em solid #D6D6D6; }
 
 /* ------Quick Links-----*/
 
@@ -155,7 +154,8 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 #container #homepage section nav a{padding:0 0 0 .5em; background:url("../images/arrow.gif") left center no-repeat;}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #container #homepage section{margin-bottom:1em;}
+  #container #homepage section{border-bottom:.1em solid #D6D6D6;}
+  #container #homepage section article footer a{text-align:right; border-bottom:.1em solid #D6D6D6;}
 }
 /*----------------------------------------------Footer-------------------------------------*/
 
