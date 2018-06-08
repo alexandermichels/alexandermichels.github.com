@@ -24,7 +24,6 @@ img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;
 .imgr{float:right; margin:0 0 1.25em 1.25em; clear:right;}
 
 /*----------------------------------------------HTML 5 Overrides-------------------------------------*/
-hr {width:3px; padding: .2em 0 .2em 0;}
 address, article, aside, figcaption, figure, footer, header, nav, section{margin:0; padding:0;}
 
 q{display:block; padding:0 .83em .66em .83em; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
@@ -48,13 +47,13 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 nav ul{margin:0; padding:0; list-style:none;}
 
-h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:1.5em; font-weight:normal; font-style:italic; line-height:normal;}
+h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:100%; font-weight:normal; font-style:italic; line-height:normal;}
 
 address{font-style:normal;}
 
 blockquote, q{display:block; padding:.66em .83em; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
-blockquote:before, q:before{content:'� '; font-size:200%;}
-blockquote:after, q:after{content:' �'; font-size:200%; line-height:0;}
+blockquote:before, q:before{content:'� '; font-size:100%;}
+blockquote:after, q:after{content:' �'; font-size:100%; line-height:0;}
 
 form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
@@ -83,14 +82,14 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 
 #header{padding:1.65em 16.5% 0 16.5%;}
 
-#header #hgroup{float:left; margin:0 0 1.65em 0;}
+#header #hgroup{float:left; margin:0 16.5% 1.65em 16.5%;}
 #header #hgroup h1, #header #hgroup h2{font-weight:normal; font-style:normal; text-transform:none;}
 #header #hgroup h1{font-size:100%;}
 #header #hgroup h2{font-size:75%;}
 
-#header nav{display:block; width:100%; margin:0; padding:.5em 0; color:#C0BAB6; background-color:#232323; clear:both;}
-#header nav ul{padding:0 .5em;}
-#header nav li{display:inline; margin-right:.5em; text-transform:uppercase;}
+#header nav{display:block; width:100%; margin:0; padding:.25em 16.5% 0 16.5%; color:#C0BAB6; background-color:#232323; clear:both;}
+#header nav ul{padding:0 .25em;}
+#header nav li{display:inline; margin-right:.25em; text-transform:uppercase;}
 #header nav li.last{margin-right:0;}
 #header nav li a{width:100%; height:100%; color:#C0BAB6; background-color:#232323;}
 #header nav li a:hover{color:#ee00ff; background-color:#232323;}
