@@ -18,7 +18,7 @@ code{font-weight:normal; font-style:normal; font-family:Georgia, "Times New Roma
 .fl_left{float:left;}
 .fl_right{float:right;}
 
-img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+img{margin:0; padding:0; border:none; max-width:100%; line-height:normal; vertical-align:middle;}
 .imgholder, .imgl, .imgr{padding:.33em; border:.1em solid #D6D6D6; text-align:center;}
 .imgl{float:left; margin:0 1.25em 1.25em 0; clear:left;}
 .imgr{float:right; margin:0 0 1.25em 1.25em; clear:right;}
@@ -87,9 +87,9 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 #header #hgroup h1{font-size:150%;}
 #header #hgroup h2{font-size:100%;}
 
-#header nav{display:block; width:100%; margin:0; padding:.5em 16.5% 1em 16.5%; color:#C0BAB6; background-color:#232323; clear:both;}
-#header nav ul{padding:0 .25em;}
-#header nav li{display:inline; margin-right:.25em; text-transform:uppercase; padding: .1em .1em .1em .1em; }
+#header nav{display:block; width:100%; margin:0; padding: 1em .3em 1em .3em; color:#C0BAB6; background-color:#232323; clear:both;}
+#header nav ul{padding:0 .4em;}
+#header nav li{display:inline-block; margin-right:.25em; text-transform:uppercase; padding: .1em .1em .1em .1em; }
 #header nav li.last{margin-right:0;}
 #header nav li a{width:100%; height:100%; color:#C0BAB6; background-color:#232323;}
 #header nav li a:hover{color:#ee00ff; background-color:#232323;}
@@ -126,8 +126,8 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 /* ------Blogposts-----*/
 
 #container #homepage section article header h2{font-size:90%; font-weight:bold;}
-#container #homepage section article address, #container #homepage section article time{font-size:60%; font-style:normal;}
-#container #homepage section article p{font-size:80%;}
+#container #homepage section article address, #container #homepage section article time{font-size:80%; font-style:normal;}
+#container #homepage section article p{font-size:90%;}
 #container #homepage section article footer{text-align:left;}
 
 /* ------Quick Links-----*/
