@@ -168,7 +168,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 #header nav li a:hover{color: var(--hyperlink-color); background-color: var(--background-color);}
 
 /*----------------------------------------------Content Area-------------------------------------*/
-#about_me{padding:2.5em 0 1em 0;}
+
 #container section{margin-bottom:2.5em; padding:0;}
 #container .last{margin:0;}
 #container .more{text-align:right;}
@@ -211,13 +211,17 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #container #homepage section{border-bottom:.1em solid  var(--border-color);}
+  #container #homepage section article {width: 95%;}
   #container #homepage section nav{width:100%;}
+  #container #homepage section nav:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+  #container #homepage section.lastbox{width:100%;}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #container #homepage section{border-bottom:0px}
   #container #homepage section nav{width:95%;}
+  #about_me
 }
 /*----------------------------------------------Footer-------------------------------------*/
 
