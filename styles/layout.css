@@ -47,7 +47,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 nav ul{margin:0; padding:0; list-style:none;}
 
-h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:90%; font-weight:normal; font-style:italic; line-height:normal;}
+h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:100%; font-weight:normal; font-style:italic; line-height:normal;}
 
 address{font-style:normal;}
 
@@ -84,8 +84,8 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 
 #header #hgroup{float:left; margin:0 16.5% 1.65em 16.5%;}
 #header #hgroup h1, #header #hgroup h2{font-weight:normal; font-style:normal; text-transform:none;}
-#header #hgroup h1{font-size:100%;}
-#header #hgroup h2{font-size:75%;}
+#header #hgroup h1{font-size:150%;}
+#header #hgroup h2{font-size:100%;}
 
 #header nav{display:block; width:100%; margin:0; padding:.25em 0 0 0; color:#C0BAB6; background-color:#232323; clear:both;}
 #header nav ul{padding:0 .25em;}
