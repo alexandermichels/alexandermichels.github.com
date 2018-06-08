@@ -155,7 +155,6 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #container #homepage section{border-bottom:.1em solid #D6D6D6;}
-  #container #homepage section article footer a{text-align:right; border-bottom:.1em solid #D6D6D6;}
 }
 /*----------------------------------------------Footer-------------------------------------*/
 
