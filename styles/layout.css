@@ -124,9 +124,8 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 #container #intro{border-bottom:1px solid #D6D6D6;}
 #container article {display: block;}
 #container article figure ul{margin:0; padding:0; list-style:none;}
-#container article figure ul li{float:left; margin:0 .5em 0 .5em;}
-#container article figure ul li.last{margin:0;}
-#container article figure ul li img{width:8em; height:8em; margin:0; padding:.2em; border:.1em solid #D6D6D6;}
+#container article figure ul li{float:left; margin: .5em .5em .5em .5em;}
+#container article figure ul li img{width:12em; height:12em; margin:0; padding:.2em; border:.1em solid #D6D6D6;}
 
 #container #homepage{display:block; width:100%; line-height:1.6em;}
 #container #homepage section{margin-bottom:0;}
