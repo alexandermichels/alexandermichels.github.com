@@ -84,7 +84,13 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #header{padding:1.65em 5% 1em 5%;}
-  #header #hgroup h1, #header #hgroup h2{font-style:center;}
+  #header #hgroup h1, #header #hgroup h2{text-align:center;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #header{padding:1.65em 5% 1em 5%;}
+  #header #hgroup h1, #header #hgroup h2{text-align:center;}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -115,6 +121,12 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
   [class*="col-"] {width: 100%;}
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #container{padding:2.5em 5% 1em 5%;}
+  [class*="col-"] {width: 100%;}
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #container{padding:2.5em 16.5% 1em 16.5%;}
@@ -141,6 +153,11 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
   #container #homepage section{margin-bottom: .1em;}
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #container #homepage section{margin-bottom: .1em;}
+}
+
 #container #homepage section article header h2{font-size:110%; font-weight:bold;}
 #container #homepage section article address, #container #homepage section article time{font-size:90%; font-style:normal;}
 #container #homepage section article p{font-size:100%;}
@@ -154,6 +171,11 @@ input, textarea, select{font-size:100%; font-family:Georgia,"Times New Roman",Ti
 #container #homepage section nav a{padding:0 0 0 .5em; background:url("../images/arrow.gif") left center no-repeat;}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  #container #homepage section{border-bottom:.1em solid #D6D6D6;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   #container #homepage section{border-bottom:.1em solid #D6D6D6;}
 }
 /*----------------------------------------------Footer-------------------------------------*/
