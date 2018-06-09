@@ -1,0 +1,354 @@
+html{overflow-y:scroll;}
+
+* {
+    box-sizing: border-box;
+    max-width:100%;
+}
+
+:root {
+  --header-background:#333333;
+  --header-nav-text-color:#C0BAB6;
+  --header-hyperlink-color:	#1ebbd7;
+  --header-alt-color:#555555;
+  --row2and3-background-color:#FFFFFF;
+  --background-color:#232323;
+  --body-text-color:#00B2B2;
+  --font-family:Georgia, "Times New Roman", Times, serif;
+  --row-color:#979797;
+  --hyperlink-color:#1ebbd7;
+  --border-color:#D6D6D6;
+  --quote-background-color:#ECECEC;
+  --footer-hyperlink-color:	#1ebbd7;
+
+}
+
+body{margin:0; padding:0; font-size:100%; height:100%; font-family: var(--font-family); color: var(--body-text-color); background-color: var(--background-color);}
+
+a{outline:none; text-decoration:none;}
+
+code{font-weight:normal; font-style:normal; font-family: var(--font-family);}
+
+img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.imgholder, .imgl, .imgr{padding:0px; border:.1em solid var(--border-color); text-align:center;}
+.imgl{float:left; margin:0 1em 1em 0; clear:left;}
+.imgr{float:right; margin:0 0 1em 1em; clear:right;}
+
+nav ul{margin:0; padding:0; list-style:none;}
+
+h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:125%; font-weight:normal; font-style:italic; line-height:normal;}
+
+address{font-style:normal;}
+
+blockquote, q{display:block; padding:.66em .83em; color: var(--row-color); background-color: var(--quote-background-color); font-style:italic; line-height:normal;}
+blockquote:before, q:before{content:'� '; font-size:100%;}
+blockquote:after, q:after{content:' �'; font-size:100%; line-height:0;}
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+input, textarea, select{font-size:100%; font-family: var(--font-family)}
+
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+address, article, aside, figcaption, figure, footer, header, nav, section{margin:0; padding:0;}
+
+q{display:block; padding:0 .5em .5em .5em; color: var(--row-color); background-color: var(--quote-background-color); font-style:italic; line-height:normal;}
+q:before{content:'� '; font-size:100%;}
+q:after{content:' �'; font-size:100%; line-height:0;}
+
+/* ----------------------------------------------Classes-------------------------------------*/
+
+div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
+
+.row1, .row1 a{color: var(--header-nav-text-color); background-color: var(--header-background);}
+.row2{color: var(--row-color); background-color: var(--row2and3-background-color);}
+.row2 a{color: var(--hyperlink-color); background-color: var(--row2and3-background-color);}
+.row3{color: var(--row-color); background-color: var(--row2and3-background-color);}
+.row3 a{color: var(--hyperlink-color); background-color: var(--row2and3-background-color);}
+.row4, .row4 a{color: var(--footer-hyperlink-color); background-color: var(--background-color);}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  [class*="col-"] {width: 100%;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .col-1 {width: 50%;}
+  .col-2 {width: 50%;}
+  .col-3 {width: 50%;}
+  .col-4 {width: 50%;}
+  .col-5 {width: 50%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 100%;}
+  .col-8 {width: 100%;}
+  .col-9 {width: 100%;}
+  .col-10 {width: 100%;}
+  .col-11 {width: 100%;}
+  .col-12 {width: 100%;}
+  [class*="col-"] {
+      float: left;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  [class*="col-"] {
+      float: left;
+  }
+}
+
+.seperator {border-bottom: 1px solid var(--border-color); margin-bottom: .1em;}
+
+.crlf{display:block; clear:both;}
+.crlf:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+
+/*----------------------------------------------Header-------------------------------------*/
+
+
+#header, div.row2, #footer{display:block; width:100%; margin:0 auto;}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #header div.crlf h1, #header div.crlf h2{text-align:center;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #header div.crlf h1, #header div.crlf h2{text-align:left;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #header div.crlf h1, #header div.crlf h2{text-align:left;}
+}
+
+
+/*----------------------------------------------Header-------------------------------------*/
+#header {float:left; padding:1em 1em 1em 1em;}
+#header div.crlf h1, #header div.crlf h2, #header div.crlf a h1, #header div.crlf a h2{font-weight:normal; font-style:normal; text-transform:none;}
+#header div.crlf a h1, #header div.crlf a h2{color: var(--header-hyperlink-color);}
+#header div.crlf h1, #header div.crlf a h1{font-size:200%; font-style: italic;}
+#header div.crlf h2, #header div.crlf a h2{font-size:150%;}
+
+/*----------------------------------------------Navigation Bar-------------------------------------*/
+#header nav{display:block; width:100%; margin:0; padding: 1em .5em 1em .5em; color: var(--header-nav-text-color); background-color: var(--background-color); clear:both;}
+#header nav ul{padding:0 .4em; float:center;}
+#header nav li{display:inline-block; margin-right:.25em; text-transform:uppercase; padding: .1em .5em .1em .5em; }
+#header nav li a{width:100%; height:100%; font-size:100%; color: var(--header-nav-text-color); background-color: var(--background-color);}
+#header nav li a:hover{color: var(--hyperlink-color) background-color: var(--background-color);}
+
+/*----------------------------------------------Dropdown Menu-------------------------------------*/
+.dropbtn {
+    background-color: var(--header-background);
+    color: var(--header-nav-text-color);
+    padding: 1em 1em 1.3em 1em;
+    color: var(--header-hyperlink-color);
+    height:4em;
+    max-height: 5em;
+    width:auto;
+    cursor: pointer;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    width:100%;
+    margin-bottom: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--header-background);
+    width:100%;
+    z-index: 1;
+}
+
+.dropdown-content:hover {
+  background-color: var(--header-background);
+}
+
+.dropdown-content a {
+    color: var(--header-hyperlink-color);
+    padding: 1em 1.3em;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--header-alt-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: var(--header-alt-color)
+}
+
+
+/*----------------------------------------------Content Area-------------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  width:auto;
+  position: relative;
+  margin: none;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.slideImages {
+  float: center;
+  height: auto;
+  width: 100%;
+}
+
+/* Next & previous buttons */
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: var(--body-text-color);
+  font-size: 200%;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 80%;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition:  0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*----------------------------------------------Content Area-------------------------------------*/
+div.row2 section{margin-bottom:2.5em; padding:0;}
+div.row2 .more{text-align:right;}
+
+
+/* ------Main Content-----*/
+div.row2 #intro{border-bottom:1px solid var(--border-color);}
+div.row2 article {display: block;}
+div.row2 article header a h2{font-weight: bold; font-size:150%;}
+div.row2 article figure ul{margin:0; padding:0; list-style:none;}
+div.row2 article figure ul li{float:left;}
+div.row2 article figure ul li img{width:12em; height:12em; margin:0; padding:.2em; border:.1em solid var(--border-color);}
+
+div.row3{display:block; width:100%; line-height:1.6em;}
+div.row3 section{margin-bottom:0;}
+div.row3 section h2.title{margin:0 0 2em 0; padding:0 0 .66em 0; font-weight:bold; text-transform:uppercase;}
+div.row3 section footer{clear:both;}
+
+div.row2 #slider h2{font-size:150%; font-weight:bold;}
+
+/* ------Blogposts-----*/
+
+div.row3 section article header h2{font-size:110%; font-weight:bold;}
+div.row3 section article address, div.row3 section article time{font-size:90%; font-style:normal;}
+div.row3 section article p{font-size:100%;}
+div.row3 section article footer{text-align:left;}
+
+/* ------Quick Links-----*/
+
+div.row3 section nav li{margin:0 0 .3em 0; padding:0 0 .2em 0; border-bottom:.1em solid var(--border-color);}
+div.row3 section article{font-size:80%;}
+div.row3 section nav a{padding:0 0 0 .5em; background:url("../images/arrow.gif") left center no-repeat;}
+/*----------------------------------------------Footer-------------------------------------*/
+
+#footer{padding:1.65em 0; max-height:inherit;}
+#footer p{margin:0; padding:0;}
