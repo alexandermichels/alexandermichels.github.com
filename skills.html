@@ -14,6 +14,12 @@ $(document).ready(function(){
     $(function(){ $("#myFooter").load("footer.html") });
 });
 </script>
+<script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+   </script>
 </head>
 <body>
 <div class="wrapper row1">
@@ -37,32 +43,40 @@ $(document).ready(function(){
         <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"><h3 style="font-size:125%; color: var(--hyperlink-color)">CSS</h3></a>
         <p>I use this style sheet language to make websites (like this one!) look better than they would with just HTML. Cascading Style Sheets enables me to do a lot of interesting thing stylistically like layout the page in an aesthetically pleasing way and when paired with Javascript allows me to add effects such as drop-down menus and slideshows.</p>
 
+        <a href="https://alexandermichels.github.io/"><img src="images/WebsiteSlideshow.png" alt="Example of one of my websites with a slideshow" style="width:48%; margin: .5em .5em .5em .5em; float:left; display:block" /></a>
+        <a href="https://alexandermichels.github.io/demos/Bove/"><img src="images/WebsiteDropDown.png" alt="Example of one of my websites with a drop-down menu" style="width:48%; margin: .5em .5em .5em .5em; float:right; display:block" /></a>
+
+        <div style="clear:both;"></div>
         <a href="https://en.wikipedia.org/wiki/Html"><h3 style="font-size:125%; color: var(--hyperlink-color)">HTML</h3></a>
         <p>Hypertext Markup Language allows me to write web documents such as the website you are currently reading. It is also the language that started my interest in computers as I have been coding HTML since middle school when I discovered it and wanted to make a video game website using it.</p>
 
-        <a href="https://en.wikipedia.org/wiki/Java_(programming_language)"><h3 style="font-size:125%; color: var(--hyperlink-color)">HTML</h3></a>
-        <p>Hypertext Markup Language allows me to write web documents such as the website you are currently reading. It is also the language that started my interest in computers as I have been coding HTML since middle school when I discovered it and wanted to make a video game website using it.</p>
+        <a href="https://en.wikipedia.org/wiki/Java_(programming_language)"><h3 style="font-size:125%; color: var(--hyperlink-color)">Java</h3></a>
+        <p>Serving as my first true programming language (as opposed to markup languages, etc.), Java still holds a place in my heart and is one of, if not my most used language. It is a versatile, Object-Oriented, enterprise language which I've used to <a href="https://github.com/Windsor-96/Final383">write</a> <a href="https://github.com/alexandermichels/Chirp">Android</a> <a href="https://github.com/alexandermichels/Dimensions">applications</a>, <a href="https://github.com/alexandermichels/ChirpServer">web servers</a>, <a href="https://github.com/alexandermichels/TrackChain">blockchains</a>, and solve a variety of problems in computer science, economics, finance, and mathematics with.</p>
 
+        <a href="https://github.com/alexandermichels/TrackChain"><img src="images/Trackchain.png" style="width:33%; padding: .5em .5em .5em .5em; float:left; display:block"></a>
+        <a href="https://github.com/alexandermichels/ChirpServer"><img src="images/ChirpServer.png" style="width:33%; padding: .5em .5em .5em .5em; float:left; display:block"></a>
+        <a href="https://github.com/Windsor-96/Final383"><img src="images/Game.png" style="width:33%; padding: .5em .5em .5em .5em; float:right; display:block"></a>
 
-        CSS, HTML, Java, Javascript, Python, R, Solidity, XML
-        <p>Hierarchical Temporal Memory is a ground-breaking kind of biologically-inspired artificial intelligence modeled after the human neocortex. It works by combining anology through metric-spaces, context-based representation of information, and the ability to predict multiple events per time step. It is able to do all of this by building synapses to learn transitions through states and representing data in <a href="http://www.cortical.io/science-sparse-distributed-representations.html">Sparse Distributed Representations</a>.For more info on Hierarchical Temporal Memory check out <a href="numenta.org">Numenta</a> or <a href="blog/WhatIsHierarchicalTemporalMemory.html">my blog post on HTMs</a>.</p>
-        <center><img src="images/hierarchy.png" style="width:20em" /></center>
-        <p>My <a href="https://github.com/alexandermichels/HonorsResearch/blob/master/Honors_Research_Proposal.pdf">proposed work</a> is to focus on exploring the topology of the sparse distributed representations in the hopes of improving the decoding process currently in use. I am also hoping to implement some soft computing and fuzzy logic concepts to the system. It is my belief that the fuzzy logic in conjuction with the topological insights gained will lead to a system that is able to make more accurate predictions.</p>
-        <center><img src="images/SDRClassifier.jpg" style="width:30em"/></center>
-      </div>
+        <div style="clear:both;"></div>
 
-      <div class="blogpost">
-        <center><h2>Minimum Square Deviance k-Chinese Postman Problem</h2></center>
-        <p>I worked on a <a href="docs/OnVariantsOfThek-ChinesePostmanProblem.pdf">variation of the k-Chinese Postman Problem</a> called the Minimum Square Deviance k-Chinese Postman Problem with Dr. Natacha Merz, specifically trying to find solutions for <a href="http://en.wikipedia.org/wiki/Lattice_graph">lattice graphs</a> like the square grid graph. Although we believe we made some headway, we were unable to prove any of our results because of the intractability of the problem.</p>
-        <center><img src="images/SquareGridGraph.png" style="width:10em" /></center>
-      </div>
+        <a href="https://en.wikipedia.org/wiki/JavaScript"><h3 style="font-size:125%; color: var(--hyperlink-color)">Javascript</h3></a>
+        <p>Javascript was something I picked up as I went while working on web design and development. It allows me to define how a webpage and elements on it will act, and is on display in my slideshows, drop-down menus, and many other places on my websites. For example, if you click the image below it will play audio from one of my Python applications Weather Waves.</p>
 
+        <center><input type="image" src="images/WeatherWaves.jpg" alt="Click to play WeatherWaves audio" onclick="play()" style="padding:1em; height:30%; width:30%;"></center>
+        <audio id="audio" src="audio/weather.mp3" ></audio>
 
-        <center><h2>Optimizing Throughput, Cost, and Safety in Toll Booth Plazas</h2></center>
-        <p>I took on this problem as part of <a href="http://www.comap.com/undergraduate/contests/">COMAP's Mathematical Contest in Modeling</a>. We were given 72 hours to decide between a few problems, research, model a solution, and write a paper. Our <a href="docs/2017_MCM_Problem_B.pdf">problem</a> was to look for better solutions (shapes, size, and merging patterns) which could improve on the throughput, cost, and safety of toll booth plazas after tolls.</p>
-        <center><img src="images/HorseshoeMerge.jpg" style="width:30em" /></center>
-        <p>Our <a href="docs/ProblemB.pdf">solution</a> was to use something we called a Horseshoe merge. It reduces the cost of construction for most toll booth plazas, is safer, and we do not believe it restricts throughput. Our submission received an Honorable Mention. </p>
-    </section>
+        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><h3 style="font-size:125%; color: var(--hyperlink-color)">Python</h3></a>
+        <p>My other "main language" would be Python due to its simple syntax and the ability to very quickly develop in it. I have used Python in a variety of settings including physics, algorithmic trading, and data science. <a href="https://github.com/alexandermichels/WeatherWaves">WeatherWaves</a> is an application I have been writing for Titan Radio to update the weather conditions when no one is on the air. To hear a sample of the audio it produces, click the above image!</p>
+
+        <a href="https://en.wikipedia.org/wiki/R_(programming_language)"><h3 style="font-size:125%; color: var(--hyperlink-color)">R</h3></a>
+        <p>R is another amazing programming language for statistical computing and graphics that I use for data sets, primarily handling financial time series and to perform hypothesis tests such as the t-test.</p>
+
+        <a href="https://en.wikipedia.org/wiki/Solidity"><h3 style="font-size:125%; color: var(--hyperlink-color)">Solidity</h3></a>
+        <p>A contract-oriented language targeted at the <a href="https://www.ethereum.org/">Ethereum Virtual Machine</a>, I have used Solidity to develop smart contracts and work on decentralized applications.</p>
+
+        <a href="https://en.wikipedia.org/wiki/XML"><h3 style="font-size:125%; color: var(--hyperlink-color)">XML</h3></a>
+        <p>Extensible Markup Language (XML) allows me to layout my Android apps. The user interfaces of all of my Android applications use XML to layout the various elements which are then inflated and manipulated using Java.</p>
+
     <!-- main content -->
     <div id="intro">
       <section class="clear">
