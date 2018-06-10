@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Alexander Michels</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="HTM.ico" />
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(function(){ $("#myHeader").load("header.html") });
+    $(function(){ $("#myFooter").load("footer.html") });
+});
+</script>
+</head>
+<body>
+<div class="wrapper row1">
+  <div id="myHeader"></div>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <section id="slider" class="clear">
+      <div class="blogpost">
+        <center><h2>Programming Languages</h2></center>
+        <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)"><h3 style="font-size:125%; color: var(--hyperlink-color)">Bash</h3></a>
+        <p>I use Linux operating systems on my personal computers, usually Linux Mint, but I am also familiar with other distributions such as Gentoo and Ubuntu. This has lead to me getting very familiar with Bash to use use my computer, as it saves a lot of time especially when I am <a href="https://github.com/alexandermichels/LinuxMintSetup">setting up a new computer.</a></p>
+
+        <a href="https://en.wikipedia.org/wiki/C%2B%2B"><h3 style="font-size:125%; color: var(--hyperlink-color)">C++</h3></a>
+        <p>C++ is amazing for its speed in applications where it matters such as algorithmic trading and its low level is great for working with hardware such as robotics. Our automonous robot Lenny, which won the Senior Custom division and North America Award at the Trinity Fire Fighting Robot Contest, was <a href="https://github.com/km-9/cleanGITproject">written in C++</a> and deployed on an Arduino and Raspberry Pi in order to handle the various sensors.</p>
+
+        <a href="https://en.wikipedia.org/wiki/Clojure"><h3 style="font-size:125%; color: var(--hyperlink-color)">Clojure</h3></a>
+        <p>Clojure is a very interesting and fun language that I originally learned to expose myself to functional programming, but I fell in love with the immutable data structures, uniform structure, macros, and compatability with Java.</p>
+
+        <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"><h3 style="font-size:125%; color: var(--hyperlink-color)">CSS</h3></a>
+        <p>I use this style sheet language to make websites look better than they would with just HTML. Cascading Style Sheets enables me to do a lot of interesting thing stylistically and when paired with Javascript allows me to add effects such as drop down menus and slideshows.</p>
+
+
+        CSS, HTML, Java, Javascript, Python, R, Solidity, XML
+        <p>Hierarchical Temporal Memory is a ground-breaking kind of biologically-inspired artificial intelligence modeled after the human neocortex. It works by combining anology through metric-spaces, context-based representation of information, and the ability to predict multiple events per time step. It is able to do all of this by building synapses to learn transitions through states and representing data in <a href="http://www.cortical.io/science-sparse-distributed-representations.html">Sparse Distributed Representations</a>.For more info on Hierarchical Temporal Memory check out <a href="numenta.org">Numenta</a> or <a href="blog/WhatIsHierarchicalTemporalMemory.html">my blog post on HTMs</a>.</p>
+        <center><img src="images/hierarchy.png" style="width:20em" /></center>
+        <p>My <a href="https://github.com/alexandermichels/HonorsResearch/blob/master/Honors_Research_Proposal.pdf">proposed work</a> is to focus on exploring the topology of the sparse distributed representations in the hopes of improving the decoding process currently in use. I am also hoping to implement some soft computing and fuzzy logic concepts to the system. It is my belief that the fuzzy logic in conjuction with the topological insights gained will lead to a system that is able to make more accurate predictions.</p>
+        <center><img src="images/SDRClassifier.jpg" style="width:30em"/></center>
+      </div>
+
+      <div class="blogpost">
+        <center><h2>Minimum Square Deviance k-Chinese Postman Problem</h2></center>
+        <p>I worked on a <a href="docs/OnVariantsOfThek-ChinesePostmanProblem.pdf">variation of the k-Chinese Postman Problem</a> called the Minimum Square Deviance k-Chinese Postman Problem with Dr. Natacha Merz, specifically trying to find solutions for <a href="http://en.wikipedia.org/wiki/Lattice_graph">lattice graphs</a> like the square grid graph. Although we believe we made some headway, we were unable to prove any of our results because of the intractability of the problem.</p>
+        <center><img src="images/SquareGridGraph.png" style="width:10em" /></center>
+      </div>
+
+
+        <center><h2>Optimizing Throughput, Cost, and Safety in Toll Booth Plazas</h2></center>
+        <p>I took on this problem as part of <a href="http://www.comap.com/undergraduate/contests/">COMAP's Mathematical Contest in Modeling</a>. We were given 72 hours to decide between a few problems, research, model a solution, and write a paper. Our <a href="docs/2017_MCM_Problem_B.pdf">problem</a> was to look for better solutions (shapes, size, and merging patterns) which could improve on the throughput, cost, and safety of toll booth plazas after tolls.</p>
+        <center><img src="images/HorseshoeMerge.jpg" style="width:30em" /></center>
+        <p>Our <a href="docs/ProblemB.pdf">solution</a> was to use something we called a Horseshoe merge. It reduces the cost of construction for most toll booth plazas, is safer, and we do not believe it restricts throughput. Our submission received an Honorable Mention. </p>
+    </section>
+    <!-- main content -->
+    <div id="intro">
+      <section class="clear">
+        <!-- article 1 -->
+      </section>
+    </div>
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+  <div class="wrapper row3">
+      <div id="homepage" class="last clear">
+        <div id="myFooter" style="width=100%;"></div>
+      </div>
+  </div>
+</div>
+</div>
+<!-- Footer -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear">
+  </footer>
+</div>
+</body>
+</html>
