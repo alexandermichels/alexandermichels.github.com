@@ -127,18 +127,21 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 @media only screen and (max-width: 600px) {
   #header{padding:1.65em 0% 1em 0%;}
   #header #hgroup h1, #header #hgroup h2{text-align:center;}
+  #header nav a{width: 100%;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  #header{padding:1.65em 5% 1em 5%;}
+  #header{padding:1.65em 0% 1em 0%;}
   #header #hgroup h1, #header #hgroup h2{text-align:left;}
+  #header nav a{width: 100%;}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #header{padding:1.65em 16.5% 1em 16.5%;}
   #header #hgroup h1, #header #hgroup h2{text-align:left;}
+  #header nav a{width: auto;}
 }
 
 #header #hgroup{float:left; margin:0 0 1.65em 0;}
@@ -147,7 +150,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 #header #hgroup h2{font-size:150%;}
 
 #header nav{display:table; width:100%; margin:0; padding: 1em .5em 1em .5em; color: var(--header-nav-text-color); background-color: var(--background-color); clear:both;}
-#header nav a{display:block; float:left; text-transform:uppercase; padding: .1em .7em .1em .7em; width:auto; font-size:100%; color: var(--header-nav-text-color); background-color: var(--background-color); }
+#header nav a{display:block; float:left; text-transform:uppercase; padding: .1em .7em .1em .7em; font-size:100%; color: var(--header-nav-text-color); background-color: var(--background-color); }
 #header nav a:hover{color: var(--hyperlink-color); background-color: var(--background-color);}
 
 /*----------------------------------------------Content Area-------------------------------------*/
