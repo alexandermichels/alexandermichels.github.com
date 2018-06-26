@@ -158,7 +158,6 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 .dropbtn {
     background-color: var(--header-background);
     color: var(--header-nav-text-color);
-    color: var(--header-hyperlink-color);
     cursor: pointer;
     border: none;
     font-size: 150%;
