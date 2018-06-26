@@ -202,7 +202,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: var(--header-background)
+    background-color: var(--header-alt-color);
 }
 
 
