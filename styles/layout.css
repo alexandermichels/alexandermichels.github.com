@@ -1,5 +1,6 @@
 :root {
   --header-background:#333333;
+  --header-alt-color:#555555;
   --row2and3-background-color:#FFFFFF;
   --background-color:#232323;
   --body-text-color:#3a3535;
@@ -158,8 +159,8 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 .dropbtn {
     background-color: var(--header-background);
     color: var(--header-nav-text-color);
-    padding: 0.1em .5em .1em .5em;
-    color: var(--header-hyperlink-color);
+    padding: 1em 1em 1.3em 1em;
+    text-transform:uppercase;
     font-size: 100%;
     cursor: pointer;
     border: none;
@@ -183,17 +184,17 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 }
 
 .dropdown-content:hover {
-  background-color: var(--header-background);
+  background-color: var(--header-alt-color);
 }
 
 .dropdown-content a {
-    color: var(--header-hyperlink-color);
+    color: var(--header-nav-text-color);
     padding: 1em 1.3em;
     display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: var(--header-alt-color);
+  background-color: var(--header-hyperlink-color);
 }
 
 .dropdown:hover .dropdown-content {
@@ -202,7 +203,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: var(--header-alt-color)
+    background-color: var(--header-background)
 }
 
 
