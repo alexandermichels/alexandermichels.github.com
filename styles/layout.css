@@ -159,8 +159,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 .dropbtn {
     background-color: var(--header-background);
     color: var(--hyperlink-color);
-    padding: 1em 1em 1.3em 1em;
-    margin: 0em 0em 1em 0em;
+    padding: 1em 1em 1em 1em;
     text-transform:uppercase;
     font-size: 100%;
     cursor: pointer;
@@ -169,11 +168,10 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 .dropdown {
     position: relative;
-    background-color: var(--header-background);
     text-align: left;
     display: inline-block;
     width:100%;
-    margin-bottom: none;
+    margin-bottom: 1em;
 }
 
 .dropdown-content {
