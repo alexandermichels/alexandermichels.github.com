@@ -157,7 +157,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 #header nav div a:hover{color: var(--hyperlink-color); background-color: var(--background-color);}
 /*----------------------------------------------Dropdown Menu-------------------------------------*/
 .dropbtn {
-    background-color: var(--header-background);
+    background-color: var(--background-color);
     color: var(--header-nav-text-color);
     padding: 1em 1em 1em 1em;
     text-transform:uppercase;
@@ -188,8 +188,6 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 .dropdown-content a {
     color: var(--header-nav-text-color);
-    background-color: var(--background-color);
-    padding: 1em 1.3em;
     display: block;
 }
 
