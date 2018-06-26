@@ -161,6 +161,11 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
     color: var(--header-hyperlink-color);
     cursor: pointer;
     border: none;
+    font-size: 150%;
+    padding: .1em .5em .1em .5em;
+    margin: 0em 0em 1em 0em;
+    color: var(--header-nav-text-color);
+    background-color: var(--header-background);
 }
 
 .dropdown {
@@ -174,13 +179,14 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 .dropdown-content {
     display: none;
     position: absolute;
+    color: var(--header-nav-text-color);
     background-color: var(--header-background);
     width:inherit;
     z-index: 1;
 }
 
 .dropdown-content:hover {
-  background-color: var(--header-background);
+  background-color: var(--header-alt-color);
 }
 
 .dropdown-content a {
