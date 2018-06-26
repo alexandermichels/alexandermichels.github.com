@@ -188,6 +188,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 .dropdown-content a {
     color: var(--header-nav-text-color);
+    background-color: var(--background-color);
     padding: 1em 1.3em;
     display: block;
 }
