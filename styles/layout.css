@@ -160,7 +160,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
     color: var(--header-nav-text-color);
     padding: 1em 1em 1.3em 1em;
     color: var(--header-hyperlink-color);
-    font-size: 150%;
+    font-size: 100%;
     cursor: pointer;
     border: none;
 }
