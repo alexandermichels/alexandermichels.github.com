@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<title>AI</title>
+<title>Welcome To L.A.</title>
 <meta charset="iso-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../styles/layout.css" type="text/css">
@@ -12,9 +12,8 @@
 $(document).ready(function(){
     $(function(){ $("#myHeader").load("header.html") });
     $(function(){ $("#myFooter").load("footer.html") });
-    $(function(){ $("#IntroToNLP").load("../posts/IntroToNLP.html") });
-    $(function(){ $("#WhatIsHierarchicalTemporalMemory").load("../posts/WhatIsHierarchicalTemporalMemory.html") });
-    });
+    $(function(){ $("#myPost").load("../posts/IntroToNLP.html") });
+});
 </script>
 </head>
 <body>
@@ -24,9 +23,9 @@ $(document).ready(function(){
 <!-- content -->
 <div class="wrapper row2">
   <div id="container" class="clear">
+      <article>
         <!-- Blog Posts -->
-        <div id="IntroToNLP" class="blogpost"></div>
-        <div id="WhatIsHierarchicalTemporalMemory"></div>
+        <div id="myPost"></div>
     <div id="intro">
       <section class="clear">
         <!-- article 1 -->
