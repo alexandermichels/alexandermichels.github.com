@@ -44,8 +44,8 @@ h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:125%; font-weight:bold; fo
 address{font-style:normal;}
 
 blockquote, q{display:block; padding:.66em .83em; color: var(--row-color); background-color: var(--quote-background-color); font-style:italic; line-height:normal;}
-blockquote:before, q:before{content:'� '; font-size:100%;}
-blockquote:after, q:after{content:' �'; font-size:100%; line-height:0;}
+blockquote:before, q:before{font-size:100%;}
+blockquote:after, q:after{font-size:100%; line-height:0;}
 
 form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
