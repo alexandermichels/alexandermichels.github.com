@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Blog</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/layout.css" type="text/css">
+<link rel="stylesheet" href="../styles/slideshow.css" type="text/css">
+<script src="../scripts/slideshow.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="../HTM.ico" />
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(function(){ $("#myHeader").load("header.html") });
+    $(function(){ $("#myFooter").load("footer.html") });
+    showSlides(1);
+});
+</script>
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear" style="width=100%;">
+      <div id="hgroup">
+        <h1><a href="../index.html">Alexander Michels</a></h1>
+        <h2>Mathematician and Computer Scientist</h2>
+      </div>
+      <nav>
+          <a href="../about_me.html">About Me</a>
+          <a href="../blog.html">Blog</a>
+          <a href="https://github.com/alexandermichels/CV/blob/master/CurriculumVitae.pdf">Curriculum Vitae</a>
+          <a href="https://github.com/alexandermichels">GitHub</a>
+          <a href="https://www.linkedin.com/in/alexmichels/">LinkedIn</a>
+          <a href="../research.html">Research</a>
+          <a href="../skills.html">Skills</a>
+      </nav>
+  </header>
+
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+      <article>
+        <!-- Blog Posts -->
+        <!-- ########################################################################################## -->
+        <!-- ########################################################################################## -->
+        <!-- Blog Posts -->
+        <article>
+          <header>
+            <a href="https://alexandermichels.github.io/blog/RIPSMidterm.html"><h2>RIPS Midterm</h2></a>
+            <address>
+              <a href="https://alexandermichels.github.io/about_me.html">Alexander Michels</a>, AlexanderMichels.GitHub.io
+            </address>
+            <time datetime="2018-07-29">Sunday, July 29<sup>th</sup> 2018</time>
+          </header>
+
+          <p>On Thursday, Team Praedicat gave our Midterm Presentation for the Research in Industrial Projects for Students (RIPS) at UCLA's Institute for Pure and Applied Mathematics and it went really well. You can find our abstract for the talk, a few pictures, and our presentation slides below:</p>
+
+          <blockquote>Analysts at Praedicat, Inc., need to manually associate each company with a set of business activities. Using this information, analysts attempt to find evidence linking businesses with potentially dangerous practices, such as the use of hazardous chemicals. With a plethora of companies and business activities, manual search is a tedious process. Further, the analysis is generally performed on unstructured, non-uniform, and sporadic internet sites which makes it difficult to algorithmically search for the information needed and complex to determine the semantic meaning of the documents even when they are found. Our work attempts to tackle these problems by building a web crawler which procures information and comparing the statements found in the documents to a credible knowledge base. Based on computational fact checking, we are hoping this approach will lead to better classification of unstructured text information on the internet.</blockquote>
+
+          <div id="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img class="slideImages" src="../images/RIPSMidtermPres-1.jpg" >
+              <div class="text">Team PCAT preparing to give our talk</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img class="slideImages" src="../images/RIPSMidtermPres-2.jpg" >
+              <div class="text">Describing the data management concerns that our project has</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img class="slideImages" src="../images/RIPSMidtermPres-3.jpg" >
+              <div class="text">Himanshu giving our Solution Overview</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img class="slideImages" src="../images/RIPSMidtermPres-4.jpg" >
+              <div class="text">Talking about the need for classification when performing open information extraction</div>
+            </div>
+
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img class="slideImages" src="../images/RIPSMidtermPres-5.jpg" >
+              <div class="text">Answering questions about our project</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+
+          <p style="visibility:hidden" class="blogpost">break</p>
+
+          <object data="../docs/Midterms_PCAT_IPAM.pdf" type="application/pdf" width="100%" height="750px">
+            <iframe src="../docs/Midterms_PCAT_IPAM.pdf" width="100%" height="100%" style="border: none;">
+              This browser does not support PDFs. Please download the PDF to view it: <a href="../docs/Midterms_PCAT_IPAM.pdf">Download PDF</a>
+            </iframe>
+          </object>
+
+        </article>
+
+        <!-- ########################################################################################## -->
+        <!-- ########################################################################################## -->
+      </article>
+    <div id="intro">
+      <section class="clear">
+        <!-- article 1 -->
+      </section>
+    </div>
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <div class="wrapper row3">
+        <div id="homepage" class="last clear">
+          <section class="col-3">
+              <h2 class="title">From The Blog</h2>
+              <article>
+                <header>
+                  <h2>Knowledge Graphs 101</h2>
+                  <address>
+                  <a href="../about_me.html">Alexander Michels</a>, AlexanderMichels.GitHub.io
+                  </address>
+                  <time datetime="2018-07-26">Thursday, July 26<sup>th</sup> 2018</time>
+                </header>
+                <p>Knowledge Graphs are an increasingly popular data structure for representing relational information. Whether it is being used by <a href="https://www.ibm.com/blogs/research/2016/01/from-knowledge-graphs-to-cognitive-computing/">IBM's Watson</a> to <a href="https://www.youtube.com/watch?v=WFR3lOm_xhE">beat humans at Jeopardy</a> or <a href="https://searchengineland.com/library/google/google-knowledge-graph">Google's search engine...</p>
+                <footer class="more"><a href="../blog.html">Read More &raquo;</a></footer>
+              </article>
+            </section>
+            <section class="col-3">
+              <h2 class="title">Quick Links</h2>
+              <nav style="width:80%;">
+                <ul>
+                  <!-- add my quick links -->
+                    <li><a href="../about_me.html">About Me</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="https://github.com/alexandermichels/CV/blob/master/CurriculumVitae.pdf">Curriculum Vitae</a></li>
+                    <li><a href="https://github.com/alexandermichels">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/alexmichels/">LinkedIn</a></li>
+                </ul>
+              </nav>
+            </section>
+            <section class="col-6 lastbox">
+              <h2 class="title">About Me</h2>
+              <a href="../about_me.html"><img class="imgl" src="../images/ProfilePic.jpg" width="130" height="130" alt=""></a>
+              <p>Mathematician and Computer Scientist whose primary interests lie in Computational Finance, Logic, Machine Intelligence, Mathematical Economics, and Topology.</p>
+              <footer class="more"><a href="../about_me.html">Read More &raquo;</a></footer>
+            </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="wrapper row4">
+    <footer id="footer" class="clear">
+    </footer>
+  </div>
+  </body>
+  </html>
