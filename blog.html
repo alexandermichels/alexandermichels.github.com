@@ -10,10 +10,15 @@
 <link rel="shortcut icon" type="image/x-icon" href="HTM.ico" />
 <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <script>
 $(document).ready(function(){
     $(function(){ $("#myHeader").load("header.html") });
     $(function(){ $("#myFooter").load("footer.html") });
+    $(function(){ $("#ComputationalFact-Checking").load("posts/ComputationalFact-Checking.html") });
     $(function(){ $("#OpenInformationExtraction").load("posts/OpenInformationExtraction.html") });
     $(function(){ $("#RIPSMidterm").load("posts/RIPSMidterm.html") });
     $(function(){ $("#KnowledgeGraphs101").load("posts/KnowledgeGraphs101.html") });
@@ -38,11 +43,13 @@ $(document).ready(function(){
       <p class="dropbtn">Topics</p>
         <div class="dropdown-content">
           <a href="blog/artificial-intelligence.html">Artificial Intelligence</a>
+          <a href="blog/graphs-networks.html">Graphs and Networks</a>
           <a href="blog/information-extraction.html">Information Extraction</a>
           <a href="blog/personal-updates.html">Updates</a>
         </div>
     </div>
         <!-- Blog Posts -->
+        <div id="ComputationalFact-Checking" class="blogpost"></div>
         <div id="OpenInformationExtraction" class="blogpost"></div>
         <div id="RIPSMidterm" class="blogpost"></div>
         <div id="KnowledgeGraphs101" class="blogpost"></div>

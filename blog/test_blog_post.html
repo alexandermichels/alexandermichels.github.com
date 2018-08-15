@@ -10,6 +10,10 @@
 <link rel="shortcut icon" type="image/x-icon" href="../HTM.ico" />
 <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <script>
 $(document).ready(function(){
     $(function(){ $("#myHeader").load("header.html") });
@@ -47,54 +51,82 @@ $(document).ready(function(){
         <!-- Blog Posts -->
         <article>
           <header>
-            <a href="https://alexandermichels.github.io/blog/KnowledgeGraphs101.html"><h2>Knowledge Graphs 101</h2></a>
+            <a href="https://alexandermichels.github.io/blog/ComputationalFact-Checking.html"><h2>Computational Fact-Checking</h2></a>
             <address>
               <a href="https://alexandermichels.github.io/about_me.html">Alexander Michels</a>, AlexanderMichels.GitHub.io
             </address>
-            <time datetime="2018-07-26">Thursday, July 26<sup>th</sup> 2018</time>
+            <time datetime="2018-08-01">Wednesday, August 1<sup>st</sup> 2018</time>
           </header>
 
           <center><h2 id="introduction">Introduction</h2></center>
 
-          <p>Information extraction (IE) is the task of automatically extracting structured information from unstructured and/or semi-structured machine-readable documents. Traditionally, this has required extensive work crafting extraction rules or hand-tagging training examples and each relation of interest had to be specified either with rules or examples. The time investment also meant that IE was generally performed on small, structured, and homogeneous corpora allowing systems to use linguistic technologies that were not computational taxing and not very robust because they didn't have to be such as dependency parsers and Named-Entity Recognizers. As the size of the relations and the size of the corpus scale, all of these techniques become infeasible.</p>
+          <p>As we have seen, the problem of filtering misinformation out is both a crucial and challenging one, but how can it be accomplished? This is a burgeoning area of research given recent events. Promising and innovative techniques such as those proposed by Wu et al. check the sensitivity of a claim by examining how the strength of the claim changes as the parameters of the claim vary slightly \cite{Toward}. The vast amounts of relational information available and the relational tools available for manipulating them has lead many to search for answers through knowledge graphs. The problem then becomes: given a knowledge graph populated with true facts, how can one discern if a new fact is true or false?</p>
 
-          <div align="center" >
-            <img alt="Information Extraction graphic" src="../images/InformationExtraction.jpg"  style="max-width:100%;">
-          </div>
+          <center>
+            <figure>
+              <img alt="Twitter Network of Misinformation" src="../images/AnatomyOfAMisinformationNetwork.png"  style="max-width:90%;">
+              <figcaption>Retweet network of the core of spreaders of articles from low-credibility sources. <a href="https://bibbase.org/network/publication/shao-hui-wang-jiang-flammini-menczer-ciampaglia-anatomyofanonlinemisinformationnetwork-2018">Image Credits</a></figcaption>
+            </figure>
+          </center>
 
-          <p>This problem was solved with the revolutionary introduction of Open Information Extraction by Banko, Cafarella, Soderland, Broadhead, and Etzioni, in their <a href="https://github.com/alexandermichels/AIReading/blob/master/pdf/Open_Information_Extraction_from_the_Web.pdf">2007 "Open Information Extraction from the Web"</a>. Open Information Extraction (IE) is the task of extracting assertions from large sets of documents (known as a corpora) without requiring a pre-specified vocabulary. Their TextRunner used a self-supervised learner to identify relational dependencies between nouns and form subject-predicate-object triples. How does this work? Their learner automatically labels its own training data by parser subject-predicate-object triples and labeling them as good or bad based on a few constraints such as relationships in the parse tree. These triples are then mapped to feature vector representations and a Naive Bayes classifier is trained on this data which is used by the extractor.</p>
+          <p>The transitivity of relations between entities in a knowledge graph is a powerful tool, but it has its limitations. There must be a law of diminishing returns when we say that an entity $x$ is related to another entity $z$ because both $x$ and $z$ are related to $y$. If there is not, we quickly get complete connected components, although we know that the true number of correct relations is sparse. Thus, when considering relating entities through transitivity, we take into consideration the path length.</p>
 
-          <div align="center" >
-            <img alt="A parse tree" src="../images/ParseTree.png"  style="max-width:100%;">
-          </div>
+          <center><h2 id="klinker">Knowledge Linker and Relational Knowledge Linker</h2></center>
 
-            <p style="visibility:hidden">break</p>
+          <p>In a knowledge graph, there may be many paths from a subject to an object even of the same path length, but each of them provides different factual support for their relation by the chain of entities and relations which bring them together. As an example, paths containing generic concepts such as ``Male'' are less likely to provide specific support for our target subject and object being related than paths containing only specific concepts [1]. To formalize this intuition, this is called the \textbf{semantic proximity} and is defined as</p>
+          <center><p>$$\mathcal{W}(\textbf{P}_{s,o}) = \mathcal{W}(v_{1},...,v_{n}) = \Bigg[1+ \sum_{i=2}^{n-1} log \ k(v_{i})\Bigg]^{-1}$$</p></center>
+          <p>where $k(v)$ is the degree of entity $v$ [1]. Defining the truth value of a relation $\small\mathcal{T}(s,p,o) \in$ [0,1] to be max $\mathcal{W}(\textbf{P}_{s,o})$ gives a truth values which maximizes the semantic proximity, is equivalent to finding the shortest path, and provides the maximum information content [1]. This approach to Computational Fact-Checking is called Knowledge Linker [1].</p>
 
-          <center><h2 id="challengesinopeninformationextraction">Challenges in Open Information Extraction</h2></center>
+          <center>
+            <figure >
+              <img alt="Semantic Proximity Measure for Fact-Checking on Knowledge Graphs" src="../images/ObamaMuslimKnowledgeNetwork.PNG"  style="width:60%; max-width:90%;">
+              <figcaption>A path from Barack Obama to Islam containing the very non-specific entity, Canada. The numbers in parentheses denote the degree of the node. [1]</figcaption>
+            </figure>
+          </center>
 
-          <p>We are working with impressive systems. Even the first OpenIE system, TextRunner used: a parser, sets of non-specific linguistic rules using Part-of-Speech tagging and Parse trees, self labeling of training data for a Naive Bayes classifier which is used by an extractor, and then a redundancy-based assessor module. However, language is extremely complex and Open (Unsupervised) Information Extraction is an incredibly difficult task with a set of hard to tackle problems.</p>
+          <p>This approach was extended and improved on by capturing the semantic similarity of the relations along the path, an approach known as Relational Knowledge Linker [3]. This is achieved using the line graph of the knowledge graph [3]. Letting $\mathcal{R}$ be the number of relations in the graph, the adjacency matrix of the line graph of a knowledge graph, \textbf{C}, is a $\mathcal{R} \times \mathcal{R}$  matrix representing the co-occurrences of $\mathcal{R}$ [3]. In order to not have the matrix dominated by the most common relationships, Term Frequency-Inverse Document Frequency is then applied to \textit{C} to produce \textit{C'} using the following equations: [3] $$TF(r_{i}, r{j}) = log(1+C_{ij}) \\	IDF(r_{j}, \mathcal{R}) = log \Big( \frac{\mathcal{R}}{|\{r_{i}|C_{ij}>0\}|}\Big) \\ C'(r_{i}, r_{j}, \mathcal{R}) = TF(r_{i}, r_{j}) \cdot IDF(r_{j}, \mathcal{R})$$.</p>
 
-          <h4 id="entityresolution">Entity Resolution</h4>
+          <p>The rows of \textit{C'} are then treated as feature vectors of the relations they represent. The relational similarity, $u$, between relations $r_{i}$ and $r_{j}$, is defined as $u(r_{i}, r_{j})$ equals the cosine similarity of the $i$-th and $j$-th rows of \textit{C'} [3]. With this definition of relational similarity, we can replace the notion of path specificity laid with: <center>$$S'(P_{s,p,o}) = \Bigg[ \sum_{i=2}^{n-1} \frac{log \ k(v_{i})}{u(r_{i-1}, p)} + \frac{1}{u(r_{n-1}, p)} \Bigg]^{-1}$$</center> where again $k$ is the degree of the node [3].</p>
 
-          <p>Ironically, this is a problem with many names: Entity Resolution, Record Linkage, Object Identification, Instance Matching, and Deduplication, but it refers to the problem of knowing when two different labels are referring to same thing. For example, "Barack Obama" and "Obama", but not all are so easy. Sometimes you have entities named with abbreviations or other missing information, and humans are able to infer it from the context, but when the only information we have is a subject-predicate-object triple, there isn't much context. A closely related problem is relation resolution, knowing when two relations have the same semantic meaning. For example, ("X", "was founded by", "Y") and ("X", "was originally founded by", "Y") mean the same thing, but some small changes like that can drastically alter the meaning of a relational phrase, so it can be difficult to know when to merge two tuples.</p>
+          <center><h2 id="kstream">Knowledge Stream</h2></center>
 
-          <h4 id="incoherentextractions">Incoherent Extractions</h4>
+          <p>A single path may not capture the true semantic similarity between the two target entities however, and as previously stated a large part of fact-checking is putting the fact into its broader context. The former approach also ignores the relations along the path and the type of entities, only taking into consideration the degree of the node. Another approach to computational fact-checking on knowledge graphs considers a larger subset of the graph as its context and uses the similarities between the ontological relations to help determine which paths are more semantically meaningful for the target relation.</p>
 
-          <p>Incoherent Extractions are relational phrases which have no meaningful interpretations. They occur because the extractor decides whether to include each word in a relational phrase on a case by case basis which often results in incomprehensible phrases such as "was central torpedo".  Incoherent extractions account for 1-7% of Open IE system outputs. Approaches to solving this problem revolve around syntactic constraints on removal and inclusion of words. <a href="https://github.com/alexandermichels/AIReading/blob/master/pdf/Identifying_Relations_for_Open_Information_Extraction.pdf">Fader, Soderland, and Etzioni</a> propose that every multi-word relation phrase must begin with a verb, end with a preposition, and be contiguous sequence of words in the sentence.</p>
+          <center>
+            <figure align="center" >
+              <img alt="Finding Streams in Knowledge Graphs" src="../images/FindingStreamsinKnowledgeGraphs.jpg"  style="max-width:90%;">
+              <figcaption>Finding Streams in Knowledge Graphs [3]</figcaption>
+            </figure>
+          </center>
 
-          <h4 id="uninformativeextractions">Uninformative Extractions</h4>
+          <p>The approach is called Knowledge Stream because it treats computational fact-checking as a network flow problem, determining how much information it can push from subject to object [3]. It labels the relational edges along the way with capacities as a function of how semantically similar they are to the target relation and costs to traverse nodes which are a function of the degree of the node [3].</p>
 
-          <p>Uninformative extractions are those that omit critical information from the text resulting in a tuple that is no longer informative. Pronouns can lead to results such as ("He", "likes", "it") which doesn't have an real meaning. Consider the more subtle example <em>"Faust made a deal with the devil"</em>. This approach would yield ("Faust", "made", "a deal") or ("Faust", "made", "the devil") both of which are wrong because this sentence contains a light verb construction which is a multi-word expressions composed a verb and a noun where the noun carries the semantic content of the predicate (i.e. "making the deal"). English has a variety of problems complicating this process. Uninformative extractions account for below 4-7% of Open IE system outputs.</p>
+          <p>More specifically, the lower bound of each edge (the required flow) is zero and the upper bound (capacity) of each edge $e = (v_{i}, v_{j})$ for subject-predicate-object triple $(s,p,o)$ is $$\mathcal{U}_{s,p,o}(e) = \frac{u(g(e), p)}{1+log \ (k(v_{j}))}$$ where $u$ is the relational similarity between the edge label $g(e)$ and the target predicate $p$ and $k$ is the degree of the node [3]. The cost of each edge $e = (v_{i}, v_{j})$ is the generality of the object node $log(k(v_{j}))$ [3]. With these constraints, the problem is then turned into a minimum cost maximum flow problem, which is a commonly studied problem in computer science and the solution is optimized using Successive Shortest Path  on the residual network [3].</p>
 
-          <div align="center">
-            <img alt="Overview of the technologies in Information Extraction" src="../images/TextandDataMiningTechniques.jpg"  style="max-width:100%;">
-          </div>
+          <center><h2 id="predpath">PredPath</h2></center>
 
-            <p style="visibility:hidden">break</p>
+          <p>Our last method, PredPath, attempts to learn what examples of the target relation looks like from the graph itself and then determines if the target relation fits in with what it has learned. It abstracts the subject and object and tries to understand what it means for the more generalized subject and object to be related by the target relation, much like a human fact-checker would [2]. Given the statement ``\textit{Chicago is the capital of Illinois},'' the model abstracts \textit{Chicago} to \textit{U.S. City} and \textit{Illinois} to \textit{U.S. State} then tries to understand what it means for a \textit{U.S. City} to be \textit{capitalOf} a \textit{U.S. State} [2].</p>
 
-          <center><h2 id="conclusion">Conclusion</h2></center>
+          <center>
+            <figure>
+              <img alt="Discriminitive Predicate Path Mining for Fact-Checking" src="../images/PredicateMining.jpg"  style="max-width:90%;">
+              <figcaption>An overview of how PredPath works [2]/figcaption>
+            </figure>
+          </center>
 
-          <p>So if you've been wondering how we are tacking all of the problems I talked about in my <a href="https://alexandermichels.github.io/blog/WebCrawling101.html">Web Crawling</a> post, here is a partial answer! Thanks to the amazing work of some amazing computer scientists and mathematicians, we are able to extract some of the semantic meaning from documents. However, we are still getting junk and are working on a few improvements to our system which will hopefully cut down on the amount of junk text getting through to this stage resulting in few junk subject-predicat-object triples. As always, if you want to see what we have been exploring, feel free to check out my <a href="https://github.com/alexandermichels/AIReading">AI Readings</a> GitHub Repo and for the latest in OpenIE go here: <a href="https://github.com/dair-iitd/OpenIE-standalone">https://github.com/dair-iitd/OpenIE-standalone</a></p>
+          <p>The method begins by specializing the concept of a path to knowledge graphs. A \textbf{Meta Path} on a knowledge graph \textbf{G} is a directed, typed sequence of vertices and edges $P^{k} = o_{1} \xrightarrow{p_{1}} o_{2} \xrightarrow{p_{2}} ... \xrightarrow{p_{k-1}} o_{k}$ in \textbf{G} where $o_{i}$ denotes nodes in \textbf{G} and $\xrightarrow{p_{i}}$ denotes an edge in \textbf{G} [2]. An example of a meta path could be \{U.S. City\}$\xrightarrow{headquarter}^{-1}$\{State Agency\}$\xrightarrow{jurisdiction}$\{U.S. State\} [2].</p>
+
+          <p>Define an \textbf{Anchored Predicate Path} of length $k$ to be a directed, typed sequence of edges with typed-endpoints $P^{k} = o_{1} \xrightarrow{p_{1}}\xrightarrow{p_{2}} ... \xrightarrow{p_{k-1}} o_{k}$ [2]. Essentially this is a meta path, without the intermediate nodes. A \textbf{Discriminative Paths} of length less than or equal to $k$ to be a set $\textbf{D}^{k}_{(o_{u}, o_{v})}$ of anchored predicate paths that alternatively describe the give statement of fact $o_{u} \xrightarrow{p} o_{v}$ with maximum path length $k$ [2].</p>
+
+          <p>PredPath views fact-checking as a supervised link prediction task; that is, given a subject-predicate-object triple $(s,p,o)$, they want to know if the fact is implied by the information already in the graph [2]. This is done by generating a set of positive training examples $\textbf{T}^{+}=\{(u,v)|u \xrightarrow{p} v \in \textbf{G}\}$ and negative training examples $\textbf{T}^{+}=\{(u,v)|u \xrightarrow{p} v \notin \textbf{G}\}$ where $u$ and $v$ have the same type, connectivity, etc. as $s$ and $t$ respectively [2].</p>
+
+          <center><h2>Sources</h2></center>
+
+          <ol>
+            <li><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0128193">G. L. Ciampaglia, P. Shiralkar, L. M. Rocha, J. Bollen, F. Menczer, and A. Flammini, Computational fact checking from knowledge networks, PLOS ONE, 10 (2015).</a></li>
+            <li><a href="https://arxiv.org/abs/1510.05911">B. Shi and T. Weninger, Fact checking in large knowledge graphs - A discriminative predicate path mining approach, CoRR, abs/1510.05911 (2015).</a></li>
+            <li><a href="https://arxiv.org/abs/1708.07239">P. Shiralkar, A. Flammini, F. Menczer, and G. L. Ciampaglia, Finding streams in knowledge graphs to support fact checking, CoRR, abs/1708.07239 (2017).</a></li>
+          </ol>
 
         </article>
 
