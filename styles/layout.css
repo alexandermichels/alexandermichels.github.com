@@ -17,7 +17,7 @@ html{overflow-y:scroll;}
 
 * {
     box-sizing: border-box;
-    max-width:100%;
+    max-width:100%;4/7 @ 1.9520 USD/GBP
 }
 
 
@@ -145,7 +145,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
   #header nav a{width: auto;}
 }
 
-#header #hgroup{float:left; margin:0 0 1.65em 0;}
+#header #hgroup{float:left; margin:0 .5em 1.65em .5em;}
 #header #hgroup h1, #header #hgroup h2{font-weight:normal; font-style:normal; text-transform:none;}
 #header #hgroup h1{font-size:200%;}
 #header #hgroup h2{font-size:150%;}
