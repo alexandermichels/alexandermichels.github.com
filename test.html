@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Alexander Michels</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<link rel="stylesheet" href="styles/slideshow.css" type="text/css">
+<script src="scripts/slideshow.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="HTM.ico" />
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(function(){ $("#myHeader").load("header.html") });
+    $(function(){ $("#myFooter").load("footer.html") });
+    showSlides(1);
+});
+</script>
+</head>
+<body>
+<div class="wrapper row1">
+  <div id="myHeader"></div>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+
+    <script type="text/javascript">
+    	var address = "10.129.4.30";  //showing the current systems ip address, needs to be the publicly accessible address for Internet use, port forwarding may need to be configured
+    	var port = "50001";  //web schedule port as set from systems front panel config menu
+    	var channel = "0";  //0=all channels, 1=channel 1, 2=channel 2, 3=channel 3, etc.
+    	var weekday = new Array("sun","mon","tue","wed","thu","fri","sat");
+    	var today = new Date();
+    	var Day = today.getDay();
+    	var mode = "day";  //day mode displays programming for the current day, week mode displays programming for the current week starting with the current day
+    	var headers = "0";  //0=off, 1 = shows date, day, and program time headers above respected columns
+    	var showSecs = "0";  //0=off, 1 = shows seconds in start time
+    	var width = "500";  //width of iframe
+    	var height = "300";  //height of iframe
+    	document.write("<iframe id=\"lgxProgGuide\" width=\"" + width + "\" height=\"" + height + "\" src=\"http://" + address + ":" + port + "/websched.php?channel=" + channel + "&day=" + weekday[Day] + "&mode=" + mode + "&headers=" + headers + "&secs=" + showSecs + "\"></iframe>");
+    </script>
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+  <div class="wrapper row3">
+      <div id="homepage" class="last clear">
+        <div id="myFooter" style="width=100%;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear">
+  </footer>
+</div>
+</body>
+</html>
