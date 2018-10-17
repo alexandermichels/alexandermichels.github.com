@@ -29,7 +29,6 @@ $(document).ready(function(){
   var showSecs = "0";  //0=off, 1 = shows seconds in start time
   var width = "500";  //width of iframe
   var height = "300";  //height of iframe
-  document.write("<iframe id=\"lgxProgGuide\" width=\"" + width + "\" height=\"" + height + "\" src=\"http://" + address + ":" + port + "/websched.php?channel=" + channel + "&day=" + weekday[Day] + "&mode=" + mode + "&headers=" + headers + "&secs=" + showSecs + "\"></iframe>");
 </script>
 </head>
 <body>
@@ -39,6 +38,12 @@ $(document).ready(function(){
 <!-- content -->
 <div class="wrapper row2">
   <div id="container" class="clear">
+
+    <pre>
+      <script>
+      document.write("<iframe id=\"lgxProgGuide\" width=\"" + width + "\" height=\"" + height + "\" src=\"http://" + address + ":" + port + "/websched.php?channel=" + channel + "&day=" + weekday[Day] + "&mode=" + mode + "&headers=" + headers + "&secs=" + showSecs + "\"></iframe>");
+      </script>
+    </pre>
 
     <!-- ########################################################################################## -->
     <!-- ########################################################################################## -->
