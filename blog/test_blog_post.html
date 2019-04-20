@@ -24,22 +24,28 @@ $(document).ready(function(){
 </head>
 <body>
 <div class="wrapper row1">
-  <header id="header" class="clear" style="width=100%;">
+    <header id="header" class="clear" style="width=100%;">
       <div id="hgroup">
-        <h1><a href="../index.html">Alexander Michels</a></h1>
+        <h1><a href="index.html">Alexander Michels</a></h1>
         <h2>Mathematician and Computer Scientist</h2>
       </div>
       <nav>
-          <a href="../about_me.html">About Me</a>
-          <a href="../blog.html">Blog</a>
-          <a href="https://github.com/alexandermichels/CV/blob/master/CurriculumVitae.pdf">Curriculum Vitae</a>
+          <a href="about_me.html">About Me</a>
+          <!--<a href="blog.html">Blog</a>-->
+          <div class="dropdown" >
+            <div class="dropbtn">C.V./Resume</div>
+              <div class="dropdown-content">
+                <a href="https://docs.google.com/viewer?url=https://github.com/alexandermichels/CV/raw/master/CurriculumVitae.pdf">Curriculum Vitae</a>
+                <a href="https://docs.google.com/viewer?url=https://github.com/alexandermichels/CV/raw/master/Resume.pdf">Resume</a>
+              </div>
+          </div>
           <a href="https://github.com/alexandermichels">GitHub</a>
           <a href="https://www.linkedin.com/in/alexmichels/">LinkedIn</a>
-          <a href="../presentations.html">Presentations</a>
-          <a href="../research.html">Research</a>
-          <a href="../skills.html">Skills</a>
+          <a href="presentations.html">Presentations</a>
+          <a href="research.html">Research</a>
+          <a href="skills.html">Skills</a>
       </nav>
-  </header>
+    </header>
 
 </div>
 <!-- content -->
