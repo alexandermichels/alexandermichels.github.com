@@ -39,7 +39,12 @@ img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;
 
 nav ul{margin:0; padding:0; list-style:none;}
 
-h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:150%; font-weight:bold; font-style:italic; line-height:normal;}
+h1, h2, h4, h5, h6{margin:0; padding:0; font-size:150%; font-weight:bold; font-style:italic; line-height:normal;}
+
+h3 {
+    font-size:125%;
+    color: var(--hyperlink-color)
+}
 
 address{font-style:normal;}
 
