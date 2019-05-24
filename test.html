@@ -10,40 +10,46 @@
 <link rel="shortcut icon" type="image/x-icon" href="Networks.ico" />
 <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $(function(){ $("#myHeader").load("header.html") });
-    $(function(){ $("#myFooter").load("footer.html") });
-    showSlides(1);
-});
-</script>
-<script type="text/javascript">
-  var address = "10.129.4.30";  //showing the current systems ip address, needs to be the publicly accessible address for Internet use, port forwarding may need to be configured
-  var port = "50001";  //web schedule port as set from systems front panel config menu
-  var channel = "0";  //0=all channels, 1=channel 1, 2=channel 2, 3=channel 3, etc.
-  var weekday = new Array("sun","mon","tue","wed","thu","fri","sat");
-  var today = new Date();
-  var Day = today.getDay();
-  var mode = "day";  //day mode displays programming for the current day, week mode displays programming for the current week starting with the current day
-  var headers = "0";  //0=off, 1 = shows date, day, and program time headers above respected columns
-  var showSecs = "0";  //0=off, 1 = shows seconds in start time
-  var width = "500";  //width of iframe
-  var height = "300";  //height of iframe
-</script>
 </head>
 <body>
 <div class="wrapper row1">
-  <div id="myHeader"></div>
+    <header id="header" class="clear" style="width=100%;">
+      <div id="hgroup">
+        <h1><a href="index.html">Alexander Michels</a></h1>
+        <h2>Mathematician and Computer Scientist</h2>
+      </div>
+      <nav>
+          <a href="about_me.html">About Me</a>
+          <!--<a href="blog.html">Blog</a>-->
+          <div class="dropdown" >
+            <div class="dropbtn">C.V./Resume</div>
+              <div class="dropdown-content">
+                <a href="https://docs.google.com/viewer?url=https://github.com/alexandermichels/CV/raw/master/CurriculumVitae.pdf">Curriculum Vitae</a>
+                <a href="https://docs.google.com/viewer?url=https://github.com/alexandermichels/CV/raw/master/Resume.pdf">Resume</a>
+              </div>
+          </div>
+          <a href="https://github.com/alexandermichels">GitHub</a>
+          <a href="https://www.linkedin.com/in/alexmichels/">LinkedIn</a>
+          <a href="presentations.html">Presentations</a>
+          <a href="research.html">Research</a>
+          <a href="skills.html">Skills</a>
+      </nav>
+    </header>
 </div>
 <!-- content -->
 <div class="wrapper row2">
   <div id="container" class="clear">
 
-    <pre>
-      <script>
-      document.write("<iframe id=\"lgxProgGuide\" width=\"" + width + "\" height=\"" + height + "\" src=\"http://" + address + ":" + port + "/websched.php?channel=" + channel + "&day=" + weekday[Day] + "&mode=" + mode + "&headers=" + headers + "&secs=" + showSecs + "\"></iframe>");
-      </script>
-    </pre>
+      <div class="dropdownb" style="width:100%">
+      <div class="dropbtnb" style="width:100%">Dropdown Button</div>
+        <div class="dropdown-contentb">
+            <p>a;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkd kdkdkdkdkdkdkdkdkdkdkkd ka;kdjfakd;ak dkkdkdkdkdk dkd kdkkd kdkdkd k dkdkdkdkdkdkdkdkdk dkdkdkdkdkdk dkkdka;kdjfakd;a kdkkdkdkdkdk dkdkd kkdkdkdkdkdkdkdkdkd kdkd kdkdk dkdkdkdkdkdkd kkdka;kdjfak d;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdk</p>
+            <p>a;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdk</p>
+            <p>a;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdk</p>
+            <p>a;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdka;kdjfakd;akdkkdkdkdkdkdkdkdkkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkkdk</p>
+        </div>
+    </div>
+</div>
 
     <!-- ########################################################################################## -->
     <!-- ########################################################################################## -->
@@ -51,7 +57,23 @@ $(document).ready(function(){
     <!-- ########################################################################################## -->
   <div class="wrapper row3">
       <div id="homepage" class="last clear">
-        <div id="myFooter" style="width=100%;"></div>
+          <section class="col-6">
+            <h2 class="title">Quick Links</h2>
+            <nav>
+              <ul>
+                  <li><a href="https://github.com/alexandermichels"><img src="images/logos/Github.png" height="30" width="30" />&nbsp;&nbsp;GitHub</a></li>
+                  <li><a href="https://www.linkedin.com/in/alexmichels/"><img src="images/logos/LinkedIn.png" height="30" width="30" />&nbsp;&nbsp;LinkedIn</a></li>
+                  <li><a href="https://www.researchgate.net/profile/Alexander_Michels3"><img src="images/logos/ResearchGate.png" height="30" width="30" />&nbsp;&nbsp;Research Gate</a></li>
+                  <li><a href="https://twitter.com/alexcmichels"><img src="images/logos/Twitter.png" height="30" width="30" /> &nbsp;&nbsp;Twitter</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="col-6 lastbox">
+            <h2 class="title">About Me</h2>
+            <a href="about_me.html"><img class="imgl" src="images/ProfilePic.jpg" width="130" height="130" alt=""></a>
+            <p>Mathematician and Computer Scientist whose primary interests lie in Complex Networks, Informatics, and Topology.</p>
+            <footer class="more"><a href="about_me.html">Read More &raquo;</a></footer>
+          </section>
       </div>
     </div>
   </div>

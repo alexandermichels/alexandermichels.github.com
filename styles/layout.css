@@ -160,7 +160,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 #header nav a:hover{color: var(--hyperlink-color); background-color: var(--background-color);}
 /*----------------------------------------------Dropdown Menu-------------------------------------*/
 .dropbtn {
-    background-color: var(--background-color);
+    background-color: inherit;
     color: var(--header-nav-text-color);
     padding: 1em .7em 1em .7em;
     text-transform:uppercase;
@@ -173,12 +173,12 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
     position: relative;
     text-align: left;
     display: inline-block;
-    background-color: var(--background-color);
+    background-color: inherit;
 }
 
 .dropdown-content {
     display: none;
-    background-color: var(--background-color);
+    background-color: inherit;
     width:100%;
     z-index: 1;
 }
@@ -188,13 +188,13 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 .dropdown-content a {
     color: var(--header-nav-text-color);
-    background-color: var(--background-color);
-    padding: 1em .7em 1em .7em
+    background-color: inherit;
+    padding: 1em .7em 1em .7em;
     display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: var(--header-alt-color);
+  background-color: inherit;
 }
 
 .dropdown:hover .dropdown-content {
@@ -204,6 +204,61 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: var(--header-alt-color);
+    color: var(--hyperlink-color);
+}
+
+/*----------------------------------------------Dropdown Menu-------------------------------------*/
+.dropbtnb {
+    background-color: var(--header-background);
+    color: var(--hyperlink-color);
+    padding: 1em .7em 1em .7em;
+    text-transform:uppercase;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+.dropdownb {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    background-color: inherit;
+}
+
+.dropdown-contentb {
+    display: none;
+    background-color: inherit;
+    width:100%;
+    z-index: 1;
+}
+
+.dropdown-contentb:hover {
+}
+
+.dropdown-contentb a {
+    color: var(--hyperlink-color);
+    background-color: inherit;
+    padding: 1em .7em 1em .7em;
+    display: block;
+}
+
+.dropdown-contentb p {
+    width:inherit;
+    word-wrap:break-word;
+}
+
+.dropdown-contentb a:hover {
+  background-color: inherit;
+}
+
+.dropdownb:hover .dropdown-contentb {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdownb:hover .dropbtnb {
+    background-color: var(--header-alt-color);
+    color: var(--hyperlink-color);
 }
 
 
