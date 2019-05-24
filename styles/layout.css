@@ -166,7 +166,6 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
     text-transform:uppercase;
     display: inline-block;
     cursor: pointer;
-    border: none;
 }
 
 .dropdown {
@@ -223,6 +222,8 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
     text-align: left;
     display: inline-block;
     background-color: inherit;
+    border: 1px;
+    border-color: var(--header-background);
 }
 
 .dropdown-contentb {
@@ -230,6 +231,8 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
     background-color: inherit;
     width:100%;
     z-index: 1;
+    border: 1px;
+    border-color: var(--header-background);
 }
 
 .dropdown-contentb:hover {
