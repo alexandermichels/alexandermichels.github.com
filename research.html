@@ -24,14 +24,33 @@ $(document).ready(function(){
   <div id="container" class="clear">
     <section id="slider" class="clear">
       <div class="blogpost wrapper">
+
+
         <div class="blogpost">
-          <center><h2>Using ARIMA Models to Capture the Predictive Power of Hierarchical Temporal Memory</h2></center>
-          <p>Hierarchical Temporal Memory (HTM) is a model of intelligence based on the the interactions of pyramidal neurons in the mammalian neocortex currently being developed by <a href="numenta.com">Numenta.</a> It works by combining anology through metric-spaces, context-based representation of information, and the ability to predict multiple events per time step. It is able to do all of this by building synapses to learn transitions through states and representing data in <a href="http://www.cortical.io/science-sparse-distributed-representations.html">Sparse Distributed Representations</a>.For more info on Hierarchical Temporal Memory check out <a href="numenta.org">Numenta's amazing resources</a>.</p>
+          <center><h2>Spatially Explicit Agent-based Modeling</h2></center>
+          <p>Spatially explicit agent-based models are an effective tool for illuminating how individual behavior and public policy leads to multi-scale spatial and temporal patterns observed in various phenomena (e.g., disease spreads, natural disasters, urban traffics). My work focuses on studying economic and urban dynamics through spatially explicit agent-based models.</p>
           <div class="wrapper clear col-12">
-              <img src="images/hierarchy.png" style="max-width:60%; padding:.7em 0em 0em 1em;  display:block; float:left;" />
-              <img src="images/SpatialPooler.jpg" style="max-width:40%; padding:2em 1em .7em .7em ; display:block; float:right;"/>
+              <center><img src="images/AgentNetwork.jpg" style="max-width:60%; padding:.7em 0em 0em 1em;  display:block;" /></center>
           </div>
-          <p>It has stood out from other machine learning techniques due to high noise tolerance and learning compacity making it well-suited for anomaly detection, prediction, and sensorimotor processes. We seek to find a mathematical analogy to the predictive power of this biologically constrained theory using models for time series analysis. To do this, we statistically analyzed the error in predictions of HTM networks that we asked to predict outputs of autoregressive integrated moving average (ARIMA) models, varying the parameters of both the networks and the ARIMA models.</p>
+          <p>Some of my work includes:</p>
+          <ul>
+                  <li><i>CyberGIS-Jupyter for Spatially Explicit Agent-Based Modeling: A Case Study on Influenza Transmission</i> by Jeon-Young Kang, Jared Aldstadt, <b>Alexander Michels</b>, Rebecca Vandewalle, and Shaowen Wang</li>
+          </ul>
+          <p style="visibility:hidden">break</p>
+        </div>
+
+        <div class="blogpost">
+          <center><h2>Particle Swarm Optimization</h2></center>
+          <p>Particle Swarm Optimization (PSO) is an evolutionary population-based optimization algorithm that has found wide use in exploring parameter spaces and is applied to areas such as artificial neural network training and pattern classification. A factor in PSOs wide adoption is that particles can run in parallel, allowing PSO to take advantage of the computational resources made available by distributed systems and high-performance cyberinfrastructure. Despite being a relatively new method, research has developed countless variations on the algorithm such as constricting the velocity of particles and adding dynamic weights for social and cognitive influence. Different variations have advantages and disadvantages based on the setting of the optimization problem and work needs to be done to determine the usefulness and optimal variation for PSO on spatially explicit agent-based models.
+          </p>
+
+          <div class="wrapper clear col-12">
+            <center><img src="images/ParticleSwarmArrowsAnimation.gif" style="max-width:45%; margin:.7em;  display:block;"/></center>
+          </div>
+          <p>My work focuses on how Particle Swarm Optimization can be used in spatial modeling and simulation. In spatially explicit simulation modeling, the challenge of parameter optimization is often exacerbated by spatial and temporal dependencies in our model, making parameter optimization even more difficult as any change to parameters must be considered in the context of all of your models parameters.</p>
+          <ul>
+              <li>My paper, "Particle Swarm Optimization for Calibrating Spatially Explicit Agent-Based Models" will be presented at AAG2020 as a finalist for the Cyberinfrastructure Specialty Group Robert Raskin Student Competition.</li>
+          </ul>
           <p style="visibility:hidden">break</p>
         </div>
 
@@ -46,38 +65,11 @@ $(document).ready(function(){
 
         <p style="visibility:hidden">break</p>
 
-        <p>We presented our work at the Institute for Pure and Applied Mathematics and have been invited to present at <a href="https://jointmathematicsmeetings.org/meetings/national/jmm2019/2217_progfull.html?fbclid=IwAR0AccnUi_yuX4UdnTVF-cCFVJ5lNYAdIvzw7TPS81eGXk1pn5PvQjaGyTo#2217:AMSCP33">the 2019 Joint Mathematics Meeting</a>. Himanshu and I are continually improving the algorithm in the hopes of publishing a paper.</p>
+        <p>We presented our work at the Institute for Pure and Applied Mathematics and have been invited to present at <a href="https://jointmathematicsmeetings.org/meetings/national/jmm2019/2217_progfull.html?fbclid=IwAR0AccnUi_yuX4UdnTVF-cCFVJ5lNYAdIvzw7TPS81eGXk1pn5PvQjaGyTo#2217:AMSCP33">the 2019 Joint Mathematics Meeting</a>.</p>
 
         <center><a href="https://jointmathematicsmeetings.org/meetings/national/jmm2019/2217_progfull.html?fbclid=IwAR0AccnUi_yuX4UdnTVF-cCFVJ5lNYAdIvzw7TPS81eGXk1pn5PvQjaGyTo#2217:AMSCP33"><img src="images/JMM2019Talk-Banner.png" width="70%" ></a></center>
         <p style="visibility:hidden">break</p>
       </div>
-
-      <div class="blogpost">
-        <center><h2>Information Extraction and Aggregation from Unstructured Web Data for Business Profiling</h2></center>
-        <p>Analysts at <a href="https://www.praedicat.com/">Praedicat, Inc.</a>, need to manually profile companies for modeling actuarial risks. With a plethora of companies and business activities, manual search is a tedious process. Further, the analysis is generally performed on unstructured, non-uniform, and sporadic websites which makes it difficult to algorithmically search for the information needed and complex to determine the semantic meaning of the documents even when they are found. Our work attempts to tackle these problems by building an information extraction, classification, and aggregation system which procures information and compares the statements found in the documents to a credible knowledge base. Based on computational fact-checking, we are hoping this approach will produce a better information extraction and aggregation system.</p>
-        <center><img src="images/PCATx_COREArchitecture.png" style="width:40em; max-width:100%"/></center>
-        <p style="visibility:hidden">break</p>
-      </div>
-
-      <div class="blogpost">
-        <center><h2>Minimum Square Deviance k-Chinese Postman Problem</h2></center>
-        <p>I worked on a <a href="docs/OnVariantsOfThek-ChinesePostmanProblem.pdf">variation of the k-Chinese Postman Problem</a> called the Minimum Square Deviance k-Chinese Postman Problem with Dr. Natacha Merz, specifically trying to find solutions for <a href="http://en.wikipedia.org/wiki/Lattice_graph">lattice graphs</a> like the square grid graph. Although we believe we made some headway, we were unable to prove any of our results because of the intractability of the problem.</p>
-        <center><img src="images/SquareGridGraph.png" style="width:10em" /></center>
-        <p style="visibility:hidden">break</p>
-      </div>
-
-      <div class="blogpost">
-        <center><h2>Algorithmic Game Theory</h2></center>
-        <p>I worked with my advisor Dr. Carolyn Cuff during the spring of my sophomore year to perform research into Algorithmic Game Theory and developing simple machine learning algorithms in Java to play repeated play game such as <a href="https://en.wikipedia.org/wiki/Chicken_(game)">Chicken</a> and the <a href="https://en.wikipedia.org/wiki/Blotto_game">Colonel Blotto Game</a>. The experience taught me a lot about algorithms, Game Theory, time-complexity, and machine learning. It also gave me my first experience writing a solo research paper, "Strategies in Simulated Repeated Play Game Theory". I presented my results at <a href="docs/2017-urac-schedule.pdf">Westminster's 2017 Undergraduate Research and Arts Celebration</a> and the <a href="docs/MAA2017Abstracts.pdf">Mathematical Association of America's Allegheny Mountain Section 2017 Spring Meeting</a>.</p>
-        <center><img src="images/PrisonersDilemnaStrategies.png" /></center>
-        <p style="visibility:hidden">break</p>
-      </div>
-
-        <center><h2>Optimizing Throughput, Cost, and Safety in Toll Booth Plazas</h2></center>
-        <p>I took on this problem as part of <a href="http://www.comap.com/undergraduate/contests/">COMAP's Mathematical Contest in Modeling</a>. We were given 72 hours to decide between a few problems, research, model a solution, and write a paper. Our <a href="docs/2017_MCM_Problem_B.pdf">problem</a> was to look for better solutions (shapes, size, and merging patterns) which could improve on the throughput, cost, and safety of toll booth plazas after tolls.</p>
-        <center><img src="images/HorseshoeMerge.jpg" style="width:30em" /></center>
-        <p>Our <a href="docs/ProblemB.pdf">solution</a> was to use something we called a Horseshoe merge. It reduces the cost of construction for most toll booth plazas, is safer, and we do not believe it restricts throughput. Our submission received an Honorable Mention and we presented our results at the <a href="docs/PME2017Program.pdf">2017 PME Regional Conference</a>.</p>
-
 
     </section>
     <!-- main content -->
