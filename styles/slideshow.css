@@ -1,6 +1,6 @@
 :root {
-  --full-page-slide-background:#222222;
-  --full-page-slide-text:#ee00ff;
+  --full-page-slide-background:#bd5bfeff;
+  --full-page-slide-text:#ffffff;
 }
 
 
@@ -32,14 +32,16 @@
     padding-right:1em;
 }
 
-.fullPageSlides a, h1, h2, p {
+.fullPageSlides a, h1, h2, p, li {
     color:var(--full-page-slide-text);
 }
 
 .fullPageSlides a {
     text-decoration: underline;
     background-color:var(--full-page-slide-background);
+    font-family: "Ubuntu", Times, serif;
 }
+
 
 .slideImages {
   float: center;
