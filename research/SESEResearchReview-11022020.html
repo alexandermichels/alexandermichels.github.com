@@ -38,29 +38,46 @@ $(document).ready(function(){
           <div class="mySlides fullPageSlides fade">
             <h1>Particle Swarm Optimization</h1>
             <p>Particle Swarm Optimization allows particles to explore a space influenced by its current velocity (\(~\overrightarrow{v_{t}}~\)), the best position it has found (\(~\overrightarrow{p_{b}}~\)), and the best position its neighbors have found (\(~\overrightarrow{g_{b}}~\)):</p>
-            <p> \(\overrightarrow{v}_{t+1} = k(\overrightarrow{v}_{t}+c \beta_{1} (\overrightarrow{p}_{b}-\overrightarrow{p}_{t})+s \beta_{2}  (\overrightarrow{g}_{b}-\overrightarrow{p}_{t}))\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;-- this is velocity update <br /><br /> \(\overrightarrow{p}_{t+1} = \overrightarrow{p}_{t} + \overrightarrow{v}_{t+1}\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;-- this is position update <br /><br />where \(k = \frac{2}{\Vert 2-\phi-\sqrt{\phi^{2}-4\phi}\Vert}, \: \: \phi=c + s, \phi > 4\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;-- this is the "constriction factor" <br /><br /> \(\overrightarrow{v_{t}}= \overrightarrow{v}_{t}\cdot \frac{\texttt{vmax}}{\Vert\overrightarrow{v}_{t}\Vert}\),     if \(\Vert\overrightarrow{v}_{t}\Vert> \texttt{vmax}\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;-- this is "velocity clamping" <br /><br /> \(\beta_{1},\beta_{2}\)      are uniform i.i.d. random variables<br />
-            \(c,s\) are cognitive and social constants resp.<br /> \(\overrightarrow{p}_{t},\overrightarrow{v}_{t}\)     are position and velocity at time step </p>
             <div class="wrapper clear col-12" >
-              <center><img src="../images/PSOimg/VelocityDetermination-WhiteFont.png" style="max-width:45%; margin:.7em;  display:block;"/></center>
+              <center><img src="../images/SESEResearchReview-11022020/VelocityDetermination-WhiteFont.png" style="max-width:45%; margin:.7em;  display:block;"/></center>
+            </div>
+          </div>
+
+
+          <div class="mySlides fullPageSlides fade">
+            <h1>The math:</h1>
+            <p>velocity update:<br /> \(\overrightarrow{v}_{t+1} = k(\overrightarrow{v}_{t}+c \beta_{1} (\overrightarrow{p}_{b}-\overrightarrow{p}_{t})+s \beta_{2}  (\overrightarrow{g}_{b}-\overrightarrow{p}_{t}))\) <br /><br />position update:<br /> \(\overrightarrow{p}_{t+1} = \overrightarrow{p}_{t} + \overrightarrow{v}_{t+1}\) <br /><br />the "constriction factor":<br />where \(k = \frac{2}{\Vert 2-\phi-\sqrt{\phi^{2}-4\phi}\Vert}, \: \: \phi=c + s, \phi > 4\) <br /><br />"velocity clamping":<br /> \(\overrightarrow{v_{t}}= \overrightarrow{v}_{t}\cdot \frac{\texttt{vmax}}{\Vert\overrightarrow{v}_{t}\Vert}\),     if \(\Vert\overrightarrow{v}_{t}\Vert> \texttt{vmax}\) <br /><br /> \(\beta_{1},\beta_{2}\)      are uniform i.i.d. random variables<br />
+            \(c,s\) are cognitive and social constants resp.<br /> \(\overrightarrow{p}_{t},\overrightarrow{v}_{t}\)     are position and velocity at time step </p>
+          </div>
+
+          <div class="mySlides fullPageSlides fade">
+            <div class="wrapper clear col-12" style="display:block">
+              <h2>What does PSO look like?</h2>
+              <p>Black dots are initial positions, yellow are positions evaluated, and arrows indicate particle movement.</p>
+              <center><img src="../images/SESEResearchReview-11022020/PSOEggholder.gif" style="width:100%; "/></center>
             </div>
           </div>
 
           <div class="mySlides fullPageSlides fade">
             <div class="wrapper clear col-12" style="display:block">
-              <h2>What does PSO look like?</h2><br />
-              <center><img src="../images/PSOimg/PSOParaboloid.gif" style="max-width:45%; float:left; "/></center>
-              <center><img src="../images/PSOimg/Shubert.gif" style="max-width:45%; float:right; "/></center>
+              <h2>Particle travel throughout Optimization</h2>
+              <p>Below you can see where the particles moved.</p>
+              <center><img src="../images/SESEResearchReview-11022020/LettingParticlesFly.png" style="width:100%; "/></center>
             </div>
           </div>
 
           <div class="mySlides fullPageSlides fade">
-            <h2>How does maximum velocity effect PSO?</h2><br />
-
             <div class="wrapper clear col-12" style="display:block">
-              <center><img src="../images/PSOimg/vmax1.gif" style="max-width:33%; float:left; "/></center>
-              <center><img src="../images/PSOimg/vmax10.gif" style="max-width:33%; float:left; "/></center>
-              <center><img src="../images/PSOimg/vmax100.gif" style="max-width:33%; float:right; "/></center>
+              <h2>Why are particles shooting off the screen?</h2>
+              <p>"Letting the particles fly" outside of the region of interest reduces bias to the center of the region.</p>
             </div>
+          </div>
+
+          <div class="mySlides fullPageSlides fade">
+            <h2>How does maximum velocity effect PSO?</h2>
+            <p>A lower <i>vmax</i> allows higher granularity search, but you might not explore as much of the region</p>
+
+            <center><img src="../images/SESEResearchReview-11022020/Vmax.gif" style="width:90%; "/></center>
           </div>
 
           <div class="mySlides fullPageSlides fade">
@@ -73,9 +90,14 @@ $(document).ready(function(){
                 <li>Infectious</li>
                 <li>Recovered</li>
             </ul>
-            <center><img src="../images/PSOimg/SEIR.png" style="max-height:15vh; max-width:80%"/></center>
+            <center><img src="../images/SESEResearchReview-11022020/SEIR.png" style="max-height:15vh; max-width:80%"/></center>
+          </div>
+
+          <div class="mySlides fullPageSlides fade">
+            <h2>What outputs does the model have?</h2><br />
             <p>Below you can see the spatial distributions of influenza cases. Because of health care privacy laws, finding the spatial distrubition of influenza cases if difficult, so we used the temporal distribution of cases obtained from the <a href="http://www.floridahealth.gov/diseases-and-conditions/influenza">Miami Flu report</a>.</p>
-            <center><img src="../images/PSOimg/InfluenzaCases.png" style="max-height:30vh; max-width:33%;"/></center>
+            <center><img src="../images/SESEResearchReview-11022020/InfluenzaCases.png" style="max-width:45%; float:left; "/></center>
+            <center><img src="../images/SESEResearchReview-11022020/TemporalOutput.png" style="max-width:45%; float:right; "/></center>
           </div>
 
           <div class="mySlides fullPageSlides fade">
@@ -109,14 +131,18 @@ $(document).ready(function(){
         </div>
 
             <!-- The dots/circles -->
-            <div style="text-align:center">
+            <div style="text-align:right">
               <span class="dot" onclick="currentSlide_no_auto(1)"></span>
               <span class="dot" onclick="currentSlide_no_auto(2)"></span>
               <span class="dot" onclick="currentSlide_no_auto(3)"></span>
               <span class="dot" onclick="currentSlide_no_auto(4)"></span>
               <span class="dot" onclick="currentSlide_no_auto(5)"></span>
               <span class="dot" onclick="currentSlide_no_auto(6)"></span>
-              <span class="dot" onclick="currentSlide_no_auto(6)"></span>
+              <span class="dot" onclick="currentSlide_no_auto(7)"></span>
+              <span class="dot" onclick="currentSlide_no_auto(8)"></span>
+              <span class="dot" onclick="currentSlide_no_auto(9)"></span>
+              <span class="dot" onclick="currentSlide_no_auto(10)"></span>
+              <span class="dot" onclick="currentSlide_no_auto(11)"></span>
             </div>
     </div>
 <!-- Footer -->
