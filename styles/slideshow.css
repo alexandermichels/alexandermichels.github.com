@@ -31,7 +31,7 @@
     padding-right:1em;
 }
 
-.fullPageSlides a, h1, h2, p, li {
+.fullPageSlides a, h1, h2, p {
     color:var(--full-page-slide-text);
 }
 
