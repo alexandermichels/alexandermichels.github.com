@@ -221,6 +221,9 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
     border-color: var(--header-alt-color);
 }
 
+.intro li {
+    color: #000000;
+}
 
 .dropdownb {
     position: relative;
