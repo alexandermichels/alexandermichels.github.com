@@ -9,7 +9,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    bibtex-ruby (4.4.7)
+    bibtex-ruby (5.1.4)
       latex-decode (~> 0.0)
     citeproc (1.0.10)
       namae (~> 1.0)
@@ -154,7 +154,7 @@ GEM
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-scholar (5.16.0)
-      bibtex-ruby (~> 4.0, >= 4.0.13)
+      bibtex-ruby (~> 5.1, >= 5.1.0)
       citeproc-ruby (~> 1.0)
       csl-styles (~> 1.0)
       jekyll (~> 3.0)
@@ -226,7 +226,7 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (5.14.1)
+    minitest (5.14.2)
     multipart-post (2.1.1)
     namae (1.0.1)
     nokogiri (1.10.10)
@@ -274,6 +274,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bibtex-ruby (>= 5.1.0)
   github-pages
   jekyll
   jekyll-email-protect
