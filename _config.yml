@@ -77,6 +77,8 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  songs:
+    permanlink: /songs/:path/
 
 news_limit: 5
 
