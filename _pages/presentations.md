@@ -19,6 +19,8 @@ Organize your courses by years, topics, or universities, however you like!
 
 <a id="conf-talks" />
 
+***
+
 ## [Conference Presentations](#conf-talks)
 
 * **Particle Swarm Optimization for Calibration in Spatially Explicit Agent-Based Modeling**  
@@ -48,6 +50,8 @@ February 2017
 
 <a id="inv-talks" />
 
+***
+
 ## [Invited Talks](#inv-talks)
 
 * **Information Extraction and Aggregation for Business Profiling**  
@@ -58,6 +62,8 @@ Praedicat, Inc. | Los Angeles, CA
 July 2018
 
 <a id="posters" />
+
+***
 
 ## [Poster Sessions](#posters)
 
