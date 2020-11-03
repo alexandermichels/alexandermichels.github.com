@@ -23,6 +23,9 @@ Organize your courses by years, topics, or universities, however you like!
 
 ## [Conference Presentations](#conf-talks)
 
+* **An Exploration of the Effect of Buyer Preference and Market Composition on the Rent Gradient using the ALMA Framework**  
+3rd ACM SIGSPATIAL International Workshop on GeoSpatial Simulation | Virtual  
+November 2020
 * **Particle Swarm Optimization for Calibration in Spatially Explicit Agent-Based Modeling**  
 American Association of Geographers | Virtual  
 April 2020  

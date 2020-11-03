@@ -5,7 +5,7 @@
 title: Alexander C Michels
 email: michels9@illinois.edu
 description: > # this means to ignore newlines until "url:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Personal website of Alexander Michels, PhD student at UIUC.
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -38,7 +38,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: alexandermichels # your GitHub user name
 twitter_username: alexcmichels # your Twitter handle
 linkedin_username: alexmichels # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: EbmZrwYAAAAJ # your Google Scholar ID
 orcid_id: 0000-0002-7357-5206 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
