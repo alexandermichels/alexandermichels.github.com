@@ -70,6 +70,10 @@ July 2018
 
 ## [Poster Sessions](#posters)
 
+* **An Exploration of the Effect of Buyer Preference and Market Composition on the
+Rent Gradient using the ALMA Framework**  
+UIUC GIS Day | Champaign, IL  
+November 2020 | [Poster](http://www.gisday.illinois.edu/2020-posters/2020-michels-357780.pdf)  
 * **Particle Swarm Optimization for Calibration in Spatially Explicit Agent-Based Modeling**  
 UIUC SESE Research Review | Champaign, IL  
 February 2020 | [Poster](/assets/pdf/SESEReview-11022020.pdf)
