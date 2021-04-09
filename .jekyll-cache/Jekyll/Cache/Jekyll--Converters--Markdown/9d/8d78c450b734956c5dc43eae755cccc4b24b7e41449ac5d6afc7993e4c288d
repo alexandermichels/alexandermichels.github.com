@@ -1,0 +1,21 @@
+I"�<p>I will be presenting my short paper, <a href="https://doi.org/10.1145/3423335.3428167">“An Exploration of the Effect of Buyer Preference and Market Composition on the Rent Gradient using the ALMA Framework”</a> with <a href="https://scholar.google.com/citations?user=u5cevWAAAAAJ&amp;hl=en&amp;oi=ao">Jeon-Young Kang</a> and <a href="https://scholar.google.com/citations?user=qcUhJIcAAAAJ&amp;hl=en&amp;oi=ao">Shaowen Wang</a> at <a href="http://www.geosim.org/p/program.html">GeoSim ‘20</a> today at 1pm CST. The abstract for the paper is:</p>
+
+<blockquote>
+  <p>Urban land markets exhibit complex emergent behaviors that have yet to be fully explained by the microeconomic decision-making which constitutes the market. The Agent-based Land MArket (ALMA) framework has been introduced to simulate a bilateral agent-based land market that produces a rent gradient. In this paper, we extend the ALMA framework by introducing two new parameters, heterogeneity, and stochasticity which allow us to explore how the rent gradient is affected by buyers with diverse preferences and a range of market compositions.</p>
+</blockquote>
+
+<p><img width="80%" style="display: block; margin-left: auto; margin-right: auto;" src="/assets/gif/alma.gif" /></p>
+
+<p>A Python implementation of the ABM <a href="https://cybergisxhub.cigi.illinois.edu/notebook/agent-based-land-market/">has been uploaded to CyberGISx Hub</a>. CyberGISx Hub is a Jupyter-based platform for developing and sharing geospatial software and applications.</p>
+
+<p>Further, if you’d like to access the slides from my presentation, the <a href="/assets/pdf/GeoSim2020-Michels-ALMA.pdf">PDF can be found here</a> although the presentation has a few gifs which don’t work in the PDF export, so you can also <a href="/assets/pptx/GeoSim2020-Michels-ALMA.pptx">access the PPTX file here</a></p>
+
+<p><strong>TL;DR:</strong></p>
+
+<ul>
+  <li><a href="https://cybergisxhub.cigi.illinois.edu/notebook/agent-based-land-market/">Code</a></li>
+  <li><a href="https://doi.org/10.1145/3423335.3428167">Paper</a></li>
+  <li><a href="/assets/pdf/GeoSim2020-Michels-ALMA.pdf">PDF of Presentation</a></li>
+  <li><a href="/assets/pptx/GeoSim2020-Michels-ALMA.pptx">PPTX of Presentation</a></li>
+</ul>
+:ET
