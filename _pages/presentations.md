@@ -73,15 +73,15 @@ July 2018
 * **An Exploration of the Effect of Buyer Preference and Market Composition on the
 Rent Gradient using the ALMA Framework**  
 UIUC GIS Day | Champaign, IL  
-November 2020 | [Poster](http://www.gisday.illinois.edu/2020-posters/2020-michels-357780.pdf)  
+November 2020 | [Poster](/assets/pdf/GISDay2020Poster-ALMA.pdf)  
 * **Particle Swarm Optimization for Calibration in Spatially Explicit Agent-Based Modeling**  
 UIUC SESE Research Review | Champaign, IL  
 February 2020 | [Poster](/assets/pdf/SESEReview-11022020.pdf)
 * **CyberGIS-Jupyter for Spatially Explicity Agent-based Modeling: A Case Study in Influenza Transmission**  
-Illinois GIS Day | Champaign, IL  
+UIUC GIS Day | Champaign, IL  
 November 2019 | [Poster](/assets/pdf/GISDay2019Poster-Spatial.pdf)
 * **CyberGIS-Jupyter for Sustainable and Reproducible Geospatial Analytics**  
-Illinois GIS Day | Champaign, IL  
+UIUC GIS Day | Champaign, IL  
 November 2019 | [Poster](/assets/pdf/GISDay2019Poster-Algo.pdf)
 * **Computational Fact-Checking through Knowledge Graphs**  
 Undergraduate Research Poster Session at 2019 Joint Mathematics Meeting | Baltimore, MD  
